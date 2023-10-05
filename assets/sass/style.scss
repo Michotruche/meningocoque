@@ -10,6 +10,10 @@
     font-family: "sansprobold";
     src: url(../fonts/SourceSansPro-Bold.woff2);
 }
+@font-face {
+    font-family: "sansproregu";
+    src: url(../fonts/SourceSansPro-Regular.woff2);
+}
 a {
     text-decoration: none;
 }
@@ -97,6 +101,26 @@ footer {
             font-size: 16.002px;
             margin-left: 20px;
             line-height: 52px;
+        }
+        li {
+            font-family: sansproregu;
+        }
+    }
+    .index  {
+        background-color: #ff9b90;
+        width: 100%;
+        height: 10vh; 
+        text-align: center;
+        flex-direction: column;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            a li{
+                float: left;
+                width: 35px;
+            }
         }
     }
 }
