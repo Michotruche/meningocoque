@@ -1,17 +1,84 @@
-/* Error: Expected expression.
- *   ,
- * 4 |     background-color: ;
- *   |                       ^
- *   '
- *   assets\sass\style.scss 4:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 4 \2502      background-color: ;\d\a   \2502                        ^\a   \2575 \a   assets\\sass\\style.scss 4:23  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
 }
+
+@font-face {
+  font-family: "sansprosb";
+  src: url(../fonts/SourceSansPro-SemiBold.woff2);
+}
+@font-face {
+  font-family: "sansprobold";
+  src: url(../fonts/SourceSansPro-Bold.woff2);
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.test {
+  width: 100vw;
+  height: 10vh;
+  background-color: black;
+  display: flex;
+}
+
+footer {
+  width: 100%;
+  height: 80vh;
+  background-color: #ff6f61;
+  display: flex;
+  flex-direction: column;
+}
+footer .go-top {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #ff6f61;
+  margin-top: -22px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .go-top img {
+  transform: rotate(-90deg);
+  filter: invert(1);
+  margin-left: 14px;
+  margin-top: 6px;
+}
+footer .reseaux-sociaux {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .application {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 435px;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ff9b90;
+  border-radius: 50px;
+}
+footer .application p {
+  color: white;
+  font-size: 16px;
+  font-family: sansprobold;
+}
+footer .application img {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
