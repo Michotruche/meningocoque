@@ -18,7 +18,7 @@ img {
 
 .star {
   display: inline;
-  width: 3vw;
+  width: 2vw;
 }
 
 header ul {
@@ -65,6 +65,38 @@ main .container .recette {
 }
 main .container .recette .plat {
   width: 100%;
+}
+main .container .recette .favoris {
+  width: 3vw;
+  height: 3vw;
+  padding: 0.5vw;
+  background-color: white;
+  border: 1px solid #FF6F61;
+  border-radius: 50%;
+  position: relative;
+  top: -40vh;
+  right: -25vw;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container .recette .favoris .like {
+  width: 2.3vw;
+}
+main .container .recette .play {
+  width: 4vw;
+  position: relative;
+  top: -27vh;
+  right: -13vw;
+  z-index: 1;
+}
+main .container .recette h3 {
+  position: relative;
+  top: -23vh;
+  right: -1vw;
+  z-index: 1;
+  color: white;
 }
 main .bandeau-actus {
   width: 100%;

@@ -20,7 +20,7 @@ img {
 
 .star {
         display: inline;
-        width: 3vw;
+        width: 2vw;
     }
 
 header ul {
@@ -64,6 +64,38 @@ main {
             .plat {
                 width: 100%;
             }
+            .favoris {
+                width: 3vw;
+                height: 3vw;
+                padding: 0.5vw;
+                background-color: white;
+                border: 1px solid $orange;
+                border-radius: 50%;
+                position: relative;
+                top: -40vh;
+                right: -25vw;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .like {
+                    width: 2.3vw;
+                }
+            }
+            .play {
+                width: 4vw;
+                position: relative;
+                top: -27vh;
+                right: -13vw;
+                z-index: 1;
+            }
+            h3 {
+                position: relative;
+                top: -23vh;
+                right: -1vw;
+                z-index: 1;
+                color: white;
+            }  
         }
     }
     .bandeau-actus {
