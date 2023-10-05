@@ -1,0 +1,83 @@
+/* Variables */
+$orange: #FF6F61;
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.icons {
+    height: 3vh;
+}
+
+.star {
+        display: inline;
+        width: 3vw;
+    }
+
+header ul {
+    width: 94vw;
+    display: flex;
+    justify-content: space-between;
+}
+main {
+    width: 94vw;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .banane {
+            width: 58%;
+            img {
+                width: 100%;
+            }
+            .auteur {
+                width: 3vw;
+            }
+        }
+        .div-droite {
+            width: 40%;
+            .petite-div {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .thumbnail {
+                    width: 100%;
+                }
+                .petite-div-d {
+                    width: 50%;
+                    .auteur {
+                        width: 3vw;
+                    }
+                }
+            }
+        }
+        .recette {
+            width: 32%;
+            .plat {
+                width: 100%;
+            }
+        }
+    }
+    .bandeau-actus {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-actus {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .actu {
+            width: 49%;
+        }
+    }
+}

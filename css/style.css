@@ -1,3 +1,84 @@
+/* Variables */
+li {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.icons {
+  height: 3vh;
+}
+
+.star {
+  display: inline;
+  width: 3vw;
+}
+
+header ul {
+  width: 94vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  width: 94vw;
+}
+main .container {
+  display: flex;
+  justify-content: space-between;
+}
+main .container .banane {
+  width: 58%;
+}
+main .container .banane img {
+  width: 100%;
+}
+main .container .banane .auteur {
+  width: 3vw;
+}
+main .container .div-droite {
+  width: 40%;
+}
+main .container .div-droite .petite-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .container .div-droite .petite-div .thumbnail {
+  width: 100%;
+}
+main .container .div-droite .petite-div .petite-div-d {
+  width: 50%;
+}
+main .container .div-droite .petite-div .petite-div-d .auteur {
+  width: 3vw;
+}
+main .container .recette {
+  width: 32%;
+}
+main .container .recette .plat {
+  width: 100%;
+}
+main .bandeau-actus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .container-actus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .container-actus .actu {
+  width: 49%;
+}
 
 /*# sourceMappingURL=style.css.map */

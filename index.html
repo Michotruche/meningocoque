@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Marmiton</title>
 </head>
 <body>
@@ -12,17 +13,17 @@
         <nav>
 
             <ul>
-                <li><img src="img/burger.svg" alt=""></li>
-                <li><a href=""><img src="img/Marmiton01.svg" alt=""></a></li>
+                <li><img class="icons" src="img/burger.svg" alt=""></li>
+                <li><a href=""><img class="icons" src="img/Marmiton01.svg" alt=""></a></li>
                 <li><label for="recherche">Je cherche</label><input type="search" name="recherche" id="" placeholder="une recette, un ingrédient, de l'aide..."></li>
-                <li><a href=""><img src="img/user.svg" alt="">Connexion</a></li>
+                <li><a href=""><img class="icons" src="img/user.svg" alt="">Connexion</a></li>
             </ul>
 
             <ul>
-                <li><img src="img/mag.svg" alt=""><a href="">Le magazine</a></li>
-                <li><img src="img/Marmiton02.png" alt=""><a href="">Cuisiner à petit prix</a></li>
-                <li><img src="img/Marmiton03.svg" alt=""><a href="">Recettes ultra rapides</a></li>
-                <li><img src="img/actus.svg" alt=""><a href="">Actus</a></li>
+                <li><img class="icons" src="img/mag.svg" alt=""><a href="">Le magazine</a></li>
+                <li><img class="icons" src="img/Marmiton02.png" alt=""><a href="">Cuisiner à petit prix</a></li>
+                <li><img class="icons" src="img/Marmiton03.svg" alt=""><a href="">Recettes ultra rapides</a></li>
+                <li><img class="icons" src="img/actus.svg" alt=""><a href="">Actus</a></li>
                 <li><a href="">Manger mieux</a></li>
                 <li><a href="">Recette au hasard</a></li>
             </ul>
@@ -37,36 +38,51 @@
 
             <h2>A la une Marmiton</h2>
 
-            <div class="banane">
-                <a href=""><img src="img/banane.png" alt=""></a>
-                <h3><a href="">CUISINE DU QUOTIDIEN</a></h3>
-                <h4><a href="">Pourquoi vous devriez laver vos bananes avant de les éplucher</a></h4>
-                <a href=""><img src="img/wilson.webp" alt=""></a>
-                <p>par Héloïse Wilson</p>
-            </div>
+            <div class="container">
 
-            <div class="courge">
-                <a href=""><img src="img/patate.png" alt=""></a>
-                <h3><a href="">CUISINE DU QUOTIDIEN</a></h3>
-                <h4><a href="">L'astuce toute bête mais incoutournable pour éplucher une courge butternut facilement</a></h4>
-                <a href=""><img src="img/huar.webp" alt=""></a>
-                <p>par Adeline Huar</p>
-            </div>
+                <div class="banane">
+                    <a href=""><img src="img/banane.png" alt=""></a>
+                    <h3><a href="">CUISINE DU QUOTIDIEN</a></h3>
+                    <h4><a href="">Pourquoi vous devriez laver vos bananes avant de les éplucher</a></h4>
+                    <a href=""><img class="auteur" src="img/wilson.webp" alt=""></a>
+                    <p>par Héloïse Wilson</p>
+                </div>
 
-            <div class="pain">
-                <a href=""><img src="img/pain.png" alt=""></a>
-                <h3><a href="">MIEUX MANGER</a></h3>
-                <h4><a href="">Baguette, pain complet ou au céréales : voici le meilleur pain pour votre santé selon un médecin</a></h4>
-                <a href=""><img src="img/ordonneau.webp" alt=""></a>
-                <p>par Camille Ordonneau</p>
-            </div>
+                <div class="div-droite">
 
-            <div class="intermarche">
-                <a href=""><img src="img/intermache.png" alt=""></a>
-                <h3><a href="">MIEUX ACHETER</a></h3>
-                <h4><a href="">Ces supermarchés vont bientôt devenir des Intermarché : découvrez si le vôtre est concerné</a></h4>
-                <a href=""><img src="img/carracillo.jpeg" alt=""></a>
-                <p>par Faustine Carracillo</p>
+                    <div class="petite-div">
+                        <a href=""><img class="thumbnail" src="img/patate.png" alt=""></a>
+                        <div class="petite-div-d">
+                            <h3><a href="">CUISINE DU QUOTIDIEN</a></h3>
+                            <h4><a href="">L'astuce toute bête mais incoutournable pour éplucher une courge butternut facilement</a></h4>
+                            <a href=""><img class="auteur" src="img/huar.webp" alt=""></a>
+                            <p>par Adeline Huar</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="petite-div">
+                        <a href=""><img class="thumbnail" src="img/pain.png" alt=""></a>
+                        <div class="petite-div-d">
+                            <h3><a href="">MIEUX MANGER</a></h3>
+                            <h4><a href="">Baguette, pain complet ou au céréales : voici le meilleur pain pour votre santé selon un médecin</a></h4>
+                            <a href=""><img class="auteur" src="img/ordonneau.webp" alt=""></a>
+                            <p>par Camille Ordonneau</p>
+                        </div>
+                    </div>
+
+                    <div class="petite-div">
+                        <a href=""><img class="thumbnail" src="img/intermache.png" alt=""></a>
+                        <div class="petite-div-d">
+                            <h3><a href="">MIEUX ACHETER</a></h3>
+                            <h4><a href="">Ces supermarchés vont bientôt devenir des Intermarché : découvrez si le vôtre est concerné</a></h4>
+                            <a href=""><img class="auteur" src="img/carracillo.jpeg" alt=""></a>
+                            <p>par Faustine Carracillo</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </section>
@@ -75,96 +91,105 @@
 
             <h2>Les recettes du jour</h2>
 
-            <div class="gratin">
-                <a href=""><img src="img/gratin.webp" alt=""></a>
-                <img src="img/Marmiton04.svg" alt="">
-                <img src="img/Marmiton05.svg" alt="">
-                <h3>Gratin de pâtes moelleux, facile et pas cher</h3>
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <p>4.9/5</p>
-                <p>97 avis</p>
-            </div>
+            <div class="container">
+                
+                <div class="recette">
+                    <a href=""><img class="plat" src="img/gratin.webp" alt=""></a>
+                    <img class="like" src="img/Marmiton04.svg" alt="">
+                    <img src="img/Marmiton05.svg" alt="">
+                    <h3>Gratin de pâtes moelleux, facile et pas cher</h3>
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <p>4.9/5</p>
+                    <p>97 avis</p>
+                </div>
+    
+                <div class="recette">
+                    <a href=""><img class="plat" src="img/croque.webp" alt=""></a>
+                    <img class="like" src="img/Marmiton04.svg" alt="">
+                    <img src="img/Marmiton05.svg" alt="">
+                    <h3>Croque-monsieur</h3>
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <p>4.6/5</p>
+                    <p>103 avis</p>
+                </div>
+    
+                <div class="recette">
+                    <a href=""><img class="plat" src="img/tarte.webp" alt=""></a>
+                    <img class="like" src="img/Marmiton04.svg" alt="">
+                    <img src="img/Marmiton05.svg" alt="">
+                    <h3>Tarte frangipane aux poires et au chocolat</h3>
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <img class="star" src="img/star.svg" alt="">
+                    <p>4.8/5</p>
+                    <p>516 avis</p>
+                </div>
 
-            <div class="croque">
-                <a href=""><img src="img/croque.webp" alt=""></a>
-                <img src="img/Marmiton04.svg" alt="">
-                <img src="img/Marmiton05.svg" alt="">
-                <h3>Croque-monsieur</h3>
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <p>4.6/5</p>
-                <p>103 avis</p>
-            </div>
-
-            <div class="tarte">
-                <a href=""><img src="img/tarte.webp" alt=""></a>
-                <img src="img/Marmiton04.svg" alt="">
-                <img src="img/Marmiton05.svg" alt="">
-                <h3>Tarte frangipane aux poires et au chocolat</h3>
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <img src="img/star.svg" alt="">
-                <p>4.8/5</p>
-                <p>516 avis</p>
             </div>
 
         </section>
 
         <section class="actus">
 
-            <h2>Consultez nos dernières actus</h2>
-
-            <p>Voir plus <img src="img/Marmiton06.svg" alt=""></p>
-
-            <div class="thes">
-                <img src="img/the.jpg" alt="">
-                <img src="img/text.svg" alt="">
-                <h3><a href="">Un médecin dévoile quels sont les thés à éviter pour votre santé</a></h3>
-                <p>Il y a quelques minutes</p>
+            <div class="bandeau-actus">
+                <h2>Consultez nos dernières actus</h2>
+                <p>Voir plus <img src="img/Marmiton06.svg" alt=""></p>
             </div>
+            
+            <div class="container-actus">
 
-            <div class="entrees">
-                <img src="img/entrees.jpg" alt="">
-                <img src="img/text.svg" alt="">
-                <h3><a href="">Philippe Etchebest partage sa recette d’entrée facile et pas chère parfaite pour la saison</a></h3>
-                <p>Il y a quelques minutes</p>
-            </div>
+                <div class="actu">
+                    <img src="img/the.jpg" alt="">
+                    <img src="img/text.svg" alt="">
+                    <h3><a href="">Un médecin dévoile quels sont les thés à éviter pour votre santé</a></h3>
+                    <p>Il y a quelques minutes</p>
+                </div>
+    
+                <div class="actu">
+                    <img src="img/entrees.jpg" alt="">
+                    <img src="img/text.svg" alt="">
+                    <h3><a href="">Philippe Etchebest partage sa recette d’entrée facile et pas chère parfaite pour la saison</a></h3>
+                    <p>Il y a quelques minutes</p>
+                </div>
+    
+                <div class="actu">
+                    <img src="img/spritz.jpg" alt="">
+                    <img src="img/text.svg" alt="">
+                    <h3><a href="">Spritz d'automne : la recette pour préparer cette variante facilement</a></h3>
+                    <p>Il y a quelques minutes</p>
+                </div>
+    
+                <div class="actu">
+                    <img src="img/pdt.jpg" alt="">
+                    <img src="img/text.svg" alt="">
+                    <h3><a href="">Pommes de terre : faut-il plutôt les éplucher avant ou après la cuisson ?</a></h3>
+                    <p>Aujourd'hui</p>
+                </div>
+    
+                <div class="actu">
+                    <img src="img/Marmiton07.jpg" alt="">
+                    <img src="img/text.svg" alt="">
+                    <h3><a href="">Congeler et décongeler du riz : est-ce une bonne idée ?</a></h3>
+                    <p>Aujourd'hui</p>
+                </div>
+    
+                <div class="actu">
+                    <img src="img/Marmiton08.jpg" alt="">
+                    <img src="img/text.svg" alt="">
+                    <h3><a href="">Faire du sucre glace maison avec 1 ingrédient et en 5 min, c'est possible avec cette méthode</a></h3>
+                    <p>Aujourd'hui</p>
+                </div>
 
-            <div class="spritz">
-                <img src="img/spritz.jpg" alt="">
-                <img src="img/text.svg" alt="">
-                <h3><a href="">Spritz d'automne : la recette pour préparer cette variante facilement</a></h3>
-                <p>Il y a quelques minutes</p>
-            </div>
-
-            <div class="pdt">
-                <img src="img/pdt.jpg" alt="">
-                <img src="img/text.svg" alt="">
-                <h3><a href="">Pommes de terre : faut-il plutôt les éplucher avant ou après la cuisson ?</a></h3>
-                <p>Aujourd'hui</p>
-            </div>
-
-            <div class="riz">
-                <img src="img/Marmiton07.jpg" alt="">
-                <img src="img/text.svg" alt="">
-                <h3><a href="">Congeler et décongeler du riz : est-ce une bonne idée ?</a></h3>
-                <p>Aujourd'hui</p>
-            </div>
-
-            <div class="sucre">
-                <img src="img/Marmiton08.jpg" alt="">
-                <img src="img/text.svg" alt="">
-                <h3><a href="">Faire du sucre glace maison avec 1 ingrédient et en 5 min, c'est possible avec cette méthode</a></h3>
-                <p>Aujourd'hui</p>
             </div>
 
         </section>
