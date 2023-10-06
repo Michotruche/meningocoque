@@ -286,15 +286,57 @@ main .actu .titre-actu p {
     background-color: #EFEFEF;
   }
   body header {
+    margin: 0;
     padding-top: 1vh;
   }
-  body header .icons {
-    width: 4vw;
-    height: 4vw;
+  body header ul {
+    margin: 0;
+    padding-left: 1vw;
   }
-  body header .connexion {
+  body header .icons {
+    height: 3vw;
+  }
+  body header .barre-recherche {
+    border: 1px solid #F1EEED;
+    border-radius: 50px;
+    padding: 0.5vw 1vw;
     display: flex;
     align-items: center;
+  }
+  body header .barre-recherche label {
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+  }
+  body header .barre-recherche input[type=search] {
+    width: 40vw;
+    border: none;
+  }
+  body header .barre-recherche a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .barre-recherche .btn {
+    width: 3vw;
+    height: 3vw;
+    background-color: #FF6F61;
+    border-radius: 50%;
+  }
+  body header .barre-icons {
+    height: 1.5vw;
+  }
+  body header .connexion {
+    background-color: #FF6F61;
+    border-radius: 30px;
+    padding: 1vw 2vw;
+    display: flex;
+    align-items: center;
+  }
+  body header .connexion a {
+    color: white;
+  }
+  body header .connexion a img {
+    margin-right: 1vw;
   }
   body header .l-2 {
     width: 100%;
