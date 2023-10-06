@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "filson soft";
+  src: url(../fonts/FilsonSoft-Regular.woff2);
+}
+@font-face {
+  font-family: "open sans";
+  src: url(../fonts/Open-Sans.woff2);
+}
+@font-face {
+  font-family: "source sans pro";
+  src: url(../fonts/SourceSansPro-Regular.woff2);
+}
 /* Variables */
 li {
   list-style: none;
@@ -12,35 +24,70 @@ img {
   border-radius: 10px;
 }
 
+hr {
+  border: 1px solid #D5D5D5;
+}
+
 .icons {
   height: 2.5vh;
 }
 
-header ul {
-  width: 94vw;
+header {
+  width: 98vw;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: sticky;
+  top: 0;
+}
+header nav ul {
+  width: 96vw;
+  padding: 0.5vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-header ul div {
+header nav ul div {
   display: flex;
   align-items: center;
 }
-header ul div .euros {
+header nav ul div .euros {
   margin-right: 1vw;
-  height: 3vh;
+  height: 3.5vh;
 }
 
 main {
   width: 98vw;
 }
+main h2 {
+  font-family: "filson soft";
+}
+main h3 {
+  font-family: "filson soft";
+}
+main h4 {
+  font-family: "open sans";
+}
 main .banane {
   width: 100%;
+}
+main .banane h3 a {
+  color: #FF6F61;
 }
 main .banane img {
   width: 100%;
 }
 main .banane .auteur {
+  display: flex;
+  align-items: center;
+}
+main .banane .auteur img {
   width: 3vw;
+}
+main .banane .auteur p {
+  padding-left: 0.5vw;
+  font-family: "source sans pro";
+  color: #989898;
+  font-size: 0.75em;
 }
 main .petite-div {
   width: 100%;
@@ -57,7 +104,16 @@ main .petite-div .petite-div-d {
   width: 78%;
 }
 main .petite-div .petite-div-d .auteur {
+  display: flex;
+  align-items: center;
+}
+main .petite-div .petite-div-d .auteur img {
   width: 3vw;
+}
+main .petite-div .petite-div-d .auteur p {
+  padding-left: 1vw;
+  font-family: "source sans pro";
+  color: #989898;
 }
 main .container {
   width: 100%;
@@ -120,6 +176,7 @@ main .container .recette .container-titre-avis {
   justify-content: end;
 }
 main .container .recette .container-titre-avis h3, main .container .recette .container-titre-avis p {
+  font-family: "open sans";
   color: white;
   margin-bottom: 0;
   margin-top: 0;
@@ -199,9 +256,13 @@ main .actu .titre-actu {
 }
 main .actu .titre-actu h3 {
   margin-bottom: 0;
+  font-family: "open sans";
 }
 main .actu .titre-actu p {
   margin-top: 0;
+  font-family: "open sans";
+  font-size: 0.75em;
+  color: #989898;
 }
 
 /*# sourceMappingURL=style.css.map */

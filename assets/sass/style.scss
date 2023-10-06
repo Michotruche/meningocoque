@@ -1,5 +1,21 @@
+@font-face {
+    font-family: "filson soft";
+    src: url(../fonts/FilsonSoft-Regular.woff2);
+}
+
+@font-face {
+    font-family: "open sans";
+    src: url(../fonts/Open-Sans.woff2);
+}
+
+@font-face {
+    font-family: "source sans pro";
+    src: url(../fonts/SourceSansPro-Regular.woff2);
+}
+
 /* Variables */
 $orange: #FF6F61;
+$gris: #989898;
 
 li {
     list-style: none;
@@ -14,32 +30,67 @@ img {
     border-radius: 10px;
 }
 
+hr {
+    border: 1px solid #D5D5D5;
+}
+
 .icons {
     height: 2.5vh;
 }
 
-header ul {
-    width: 94vw;
-    display: flex;
-    justify-content: space-between;
-    div {
+header {
+    width: 98vw;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: sticky;
+    top: 0;
+    nav ul {
+        width: 96vw;
+        padding: 0.5vw;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        .euros {
-            margin-right: 1vw;
-            height: 3vh;
+        div {
+            display: flex;
+            align-items: center;
+            .euros {
+                margin-right: 1vw;
+                height: 3.5vh;
+            }
         }
     }
 }
 main {
     width: 98vw;
+    h2 {
+        font-family: "filson soft";
+    }
+    h3 {
+        font-family: "filson soft";
+    }
+    h4 {
+        font-family: "open sans";
+    }
     .banane {
         width: 100%;
+        h3 a {
+            color: $orange;
+        }
         img {
             width: 100%;
         }
         .auteur {
-            width: 3vw;
+            display: flex;
+            align-items: center;
+            img {
+                width: 3vw;
+            }
+            p {
+                padding-left: 0.5vw;
+                font-family: "source sans pro";
+                color: $gris;
+                font-size: 0.75em;
+            }
         }
     }
     .petite-div {
@@ -55,7 +106,16 @@ main {
         .petite-div-d {
             width: 78%;
             .auteur {
-                width: 3vw;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 3vw;
+                }
+                p {
+                    padding-left: 1vw;
+                    font-family: "source sans pro";
+                    color: #989898;
+                }
             }
         }
     }
@@ -117,6 +177,7 @@ main {
                 flex-direction: column;
                 justify-content: end;
                 h3, p {
+                    font-family: "open sans";
                     color: white;
                     margin-bottom: 0;
                     margin-top: 0;
@@ -195,11 +256,16 @@ main {
         }
         .titre-actu {
             margin-left: 2vw;
+            
             h3 {
                 margin-bottom: 0;
+                font-family: "open sans";
             }
             p {
                 margin-top: 0;
+                font-family: "open sans";
+                font-size: 0.75em;
+                color: $gris;
             }
         }
     }
