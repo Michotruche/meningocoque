@@ -28,6 +28,10 @@ hr {
   border: 1px solid #D5D5D5;
 }
 
+.display-none {
+  display: none;
+}
+
 .icons {
   height: 2.5vh;
 }
@@ -61,16 +65,16 @@ main {
 main h2 {
   font-family: "filson soft";
 }
-main h3 {
-  font-family: "filson soft";
-}
 main h4 {
   font-family: "open sans";
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 main .banane {
   width: 100%;
 }
 main .banane h3 a {
+  font-family: "filson soft";
   color: #FF6F61;
 }
 main .banane img {
@@ -102,6 +106,11 @@ main .petite-div .thumbnail img {
 }
 main .petite-div .petite-div-d {
   width: 78%;
+}
+main .petite-div .petite-div-d h3 a {
+  font-family: "filson soft";
+  color: #FF6F61;
+  font-size: 1em;
 }
 main .petite-div .petite-div-d .auteur {
   display: flex;
@@ -253,6 +262,7 @@ main .actu .image-actu .container-icon img {
 }
 main .actu .titre-actu {
   margin-left: 2vw;
+  width: 75%;
 }
 main .actu .titre-actu h3 {
   margin-bottom: 0;
@@ -263,6 +273,49 @@ main .actu .titre-actu p {
   font-family: "open sans";
   font-size: 0.75em;
   color: #989898;
+}
+
+@media screen and (min-width: 1000px) {
+  .display-none {
+    display: unset;
+  }
+  .display-none-resp {
+    display: none;
+  }
+  body {
+    background-color: #EFEFEF;
+  }
+  body header {
+    padding-top: 1vh;
+  }
+  body header .icons {
+    width: 4vw;
+    height: 4vw;
+  }
+  body header .connexion {
+    display: flex;
+    align-items: center;
+  }
+  body header .l-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9F9F9;
+  }
+  body header .l-2 img {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
+  }
+  body main {
+    width: 80%;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3vh 3vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
