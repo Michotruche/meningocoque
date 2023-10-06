@@ -14,6 +14,10 @@
     font-family: "sansproregu";
     src: url(../fonts/SourceSansPro-Regular.woff2);
 }
+@font-face {
+    font-family: "filsonreg";
+    src: url(../fonts/FilsonSoft-Regular.woff2);
+}
 a {
     text-decoration: none;
 }
@@ -26,12 +30,38 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.test {
-    width: 100%;
-    height: 10vh;
-    background-color: black;
-    display: flex;
- 
+.cuisine-rapide {
+    width: 90%;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;    
+    border-radius: 5%;
+    margin-left: 2%;
+    justify-content: center;
+    flex-wrap: wrap;
+    .risotto {
+        height: 18vh;
+        width: 90%;
+        justify-content: center;
+        display: flex;
+        img {
+            border-radius: 10%;
+            margin-top: 12px;
+        }
+    }
+    .dossier {
+        display: flex;
+        background-color: antiquewhite;
+        width: 90%;
+        height: 60vh;
+        justify-content: center;
+        h2 {
+            font-size: 24px;
+            font-family: filsonreg;
+            color: #ff6f61;
+        }
+    }
+    
 }
 footer {
     width: 100%;
