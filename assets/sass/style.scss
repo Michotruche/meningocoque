@@ -19,13 +19,15 @@ a {
 }
 
 body {
-    width: 100%;
+    width: 999px;
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 .test {
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     background-color: black;
     display: flex;
@@ -107,19 +109,60 @@ footer {
         }
     }
     .index  {
-        background-color: #ff9b90;
         width: 100%;
-        height: 10vh; 
-        text-align: center;
-        flex-direction: column;
-        ul {
-            list-style: none;
+        height: 5vh; 
+        background-color: #ff6f61;
+        h3 {
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .choix {
+            width: 100%;
+            height: 4vh;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            a li{
-                float: left;
-                width: 35px;
+            background-color: #ff6f61;
+            ul {
+                list-style: none;
+                display: flex;
+                margin-left: 40px;
+                align-content: center;
+                justify-content: space-between;
+                a li{                   
+                    width: 30px;
+                    height: 30px;
+                    border: 1px  black;
+                    border-radius: 50%;
+                    background-color: #ff9b90;
+                }
+            }
+        }
+    }
+    .footercontent {
+        width: 100%;
+        height: 20vh;
+        margin-top: 50px;
+        color: white;
+        p {
+            width: 18%;
+            height: 2vh;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            font-size: 14px;
+            font-family: sansproregu;
+        }
+        .conditions {
+            width: 100%;
+            height: 15vh;
+            margin-top: 10px;
+            p {
+                width: 80%;
+                height: 2vh;
+                margin-left: auto;
+                margin-right: auto;
+                color: black;
+                font-size: 14px;
+                font-family: sansproregu;
             }
         }
     }
