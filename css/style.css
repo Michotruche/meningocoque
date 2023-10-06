@@ -13,12 +13,7 @@ img {
 }
 
 .icons {
-  height: 3vh;
-}
-
-.star {
-  display: inline;
-  width: 2vw;
+  height: 2.5vh;
 }
 
 header ul {
@@ -26,91 +21,187 @@ header ul {
   display: flex;
   justify-content: space-between;
 }
+header ul div {
+  display: flex;
+  align-items: center;
+}
+header ul div .euros {
+  margin-right: 1vw;
+  height: 3vh;
+}
 
 main {
-  width: 94vw;
+  width: 98vw;
+}
+main .banane {
+  width: 100%;
+}
+main .banane img {
+  width: 100%;
+}
+main .banane .auteur {
+  width: 3vw;
+}
+main .petite-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .petite-div .thumbnail {
+  width: 20%;
+}
+main .petite-div .thumbnail img {
+  width: 100%;
+}
+main .petite-div .petite-div-d {
+  width: 78%;
+}
+main .petite-div .petite-div-d .auteur {
+  width: 3vw;
 }
 main .container {
+  width: 100%;
+  height: 43vh;
   display: flex;
   justify-content: space-between;
 }
-main .container .banane {
-  width: 58%;
+main .container .gratin {
+  background: url(../img/gratin.webp) no-repeat;
+  background-size: contain;
+  border-radius: 10px;
 }
-main .container .banane img {
-  width: 100%;
+main .container .croque {
+  background: url(../img/croque.webp) no-repeat;
+  background-size: contain;
+  border-radius: 10px;
 }
-main .container .banane .auteur {
-  width: 3vw;
-}
-main .container .div-droite {
-  width: 40%;
-}
-main .container .div-droite .petite-div {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-main .container .div-droite .petite-div .thumbnail {
-  width: 100%;
-}
-main .container .div-droite .petite-div .petite-div-d {
-  width: 50%;
-}
-main .container .div-droite .petite-div .petite-div-d .auteur {
-  width: 3vw;
+main .container .tarte {
+  background: url(../img/tarte.webp) no-repeat;
+  background-size: contain;
+  border-radius: 10px;
 }
 main .container .recette {
   width: 32%;
+  height: 100%;
 }
-main .container .recette .plat {
-  width: 100%;
+main .container .recette .container-favoris {
+  display: flex;
+  justify-content: end;
+  padding: 1vw;
 }
-main .container .recette .favoris {
+main .container .recette .container-favoris .favoris {
   width: 3vw;
   height: 3vw;
   padding: 0.5vw;
-  background-color: white;
   border: 1px solid #FF6F61;
   border-radius: 50%;
-  position: relative;
-  top: -40vh;
-  right: -25vw;
-  z-index: 1;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .container .recette .favoris .like {
-  width: 2.3vw;
+main .container .recette .container-favoris .favoris img {
+  width: 2.5vw;
 }
-main .container .recette .play {
-  width: 4vw;
-  position: relative;
-  top: -27vh;
-  right: -13vw;
-  z-index: 1;
+main .container .recette .container-play {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .container .recette h3 {
-  position: relative;
-  top: -23vh;
-  right: -1vw;
-  z-index: 1;
+main .container .recette .container-play .play {
+  height: 20%;
+}
+main .container .recette .container-titre-avis {
+  height: 25%;
+  padding-left: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+main .container .recette .container-titre-avis h3, main .container .recette .container-titre-avis p {
   color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+main .container .recette .container-titre-avis .container-star {
+  width: 40%;
+  display: inline;
+}
+main .container .recette .container-titre-avis .container-star .star {
+  width: 2vw;
+  display: inline;
+}
+main .container .recette .container-titre-avis .note {
+  display: inline;
 }
 main .bandeau-actus {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-main .container-actus {
+main .bandeau-actus .container-fleche {
+  width: 2vw;
+  height: 2vw;
+  background-color: #FF6F61;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bandeau-actus .container-fleche img {
+  width: 1vw;
+}
+main .actu {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
-main .container-actus .actu {
-  width: 49%;
+main .actu .sucre {
+  background: url(../img/Marmiton08.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .riz {
+  background: url(../img/Marmiton07.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .pdt {
+  background: url(../img/pdt.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .spritz {
+  background: url(../img/spritz.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .entrees {
+  background: url(../img/entrees.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .the {
+  background: url(../img/the.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .image-actu {
+  width: 15VW;
+  height: 15vw;
+  border-radius: 10px;
+}
+main .actu .image-actu .container-icon {
+  display: flex;
+  justify-content: end;
+}
+main .actu .image-actu .container-icon img {
+  margin-right: 0.5vw;
+  width: 3vw;
+}
+main .actu .titre-actu {
+  margin-left: 2vw;
+}
+main .actu .titre-actu h3 {
+  margin-bottom: 0;
+}
+main .actu .titre-actu p {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
