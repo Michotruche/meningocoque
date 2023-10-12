@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Marmiton</title>
 </head>
 <body>
     
-    <div class="cuisine-rapide">
+    <!-- <div class="cuisine-rapide">
         <div class="risotto">
             <img src="img/risotto.png" alt="Risotto" width="65%" height="100%">
         </div>
@@ -16,12 +17,55 @@
             <h2>CUISINE RAPIDE</h2>
             <div class="description">
                 <p>Des idées pour trouver la bonne recette rapide à faire pour ce soir !</p>
-            </div>
-            
+            </div>       
         </div>
+    </div> -->
 
+    <div class="dernieres-recettes">
+        <div class="head">
+            <div class="lastone">Dernières recettes</div>
+            <span><img src="img/arrow2.PNG" alt="arrow" width="30px" height="28px"></span>
+        </div>
+        <div class="recettes4">
+            <div class="snickers">
+                <a href="https://www.marmiton.org/recettes/recette_snickers-maison_535614.aspx"><img src="img/snickers.webp" alt="Snickers" width="225px" height="225px">Snickers maison</a>
+                <p>Aucun avis</p>
+            </div>
+            <div class="camembert">
+                <a href="https://www.marmiton.org/recettes/recette_camembert-croustillant-a-la-confiture-de-mures_535539.aspx"><img src="img/camembert.webp" alt="Camembert" width="225px" height="225px">Camembert croustillant à la confiture de mûres</a>
+                <p>Aucun avis</p>
+            </div>
+            <div class="tortilla">
+                <a href="https://www.marmiton.org/recettes/recette_tortilla-au-thon_535532.aspx"><img src="img/tortilla.webp" alt="Tortilla" width="225px" height="225px">Tortilla au thon</a>
+                <p>Aucun avis</p>
+            </div>
+            <div class="sandwich">
+                <a href="https://www.marmiton.org/recettes/recette_sandwich-thon-au-curry_535531.aspx"><img src="img/sandwich.webp" alt="Sandwich" width="225px" height="225px">Sandwich au thon et au curry</a>
+                <p>Aucun avis</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="mag">
+        <div class="offres">
+            <div class="title">Le Marmiton Mag</div>
+            <p>Et si vous vous abonniez ? C'est la meilleure façon de ne rater aucun numéro, de faire des économies et de se régaler tous les deux 
+                mois. En plus vous aurez accès à la version numérique pour lire vraiment partout.
+            </p>
+            <a href="https://www.kiosquemag.com/titres/marmiton/offress">Voir les supers offres</a>
 
+        </div>
+        <div class="livres">
+            <div class="livrepromo">
+                <span class="rond"></span>
+                <div class="left">
+                    <img src="img/livre1.webp" alt="Livre" width="131px" height="162px">
+                </div>
+                <div class="right">
+                    <img src="img/livre2.webp" alt="Livre" width="131px" height="162px">
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -44,18 +88,32 @@
             </div>
         </div>
 
-        <div class="listefin">
-            <div class="recette">
-                <h3>Recettes</h3>
-                <ul>
-                    <a href="https://www.marmiton.org/recettes/index/ingredient"><li>Index Des Recettes</li></a>
-                    <a href="https://www.marmiton.org/dossier-noel"><li>Noël</li></a>
-                    <a href="https://www.marmiton.org/paques/nos-recettes-pour-paques-s4000253.html"><li>Pâques</li></a>
-                    <a href="https://www.marmiton.org/recettes/selection_chandeleur.aspx"><li>Chandeleur</li></a>
-                </ul>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Recettes
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <a href="https://www.marmiton.org/recettes/index/ingredient"><li>Index Des Recettes</li></a>
+                        <a href="https://www.marmiton.org/dossier-noel"><li>Noël</li></a>
+                        <a href="https://www.marmiton.org/paques/nos-recettes-pour-paques-s4000253.html"><li>Pâques</li></a>
+                        <a href="https://www.marmiton.org/recettes/selection_chandeleur.aspx"><li>Chandeleur</li></a>
+                    </ul>
+                </div>
+              </div>
             </div>
-            <div class="thematique">
-                <h3>Recette par thématique</h3>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Recettes par thématique
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
                     <ul>
                         <a href="https://www.marmiton.org/recettes/selection_automne.aspx"><li>Automne</li></a>
                         <a href="https://www.marmiton.org/recettes/selection_hiver.aspx"><li>Hiver</li></a>
@@ -90,58 +148,44 @@
                         <a href="https://www.marmiton.org/recettes/recette_pate-a-crepes_12372.aspx"><li>Pâte à Crêpes</li></a>
                         <a href="https://www.marmiton.org/recettes/recette_pate-sablee_14540.aspx"><li>Pâte Sablées</li></a>
                     </ul>
-                   
+                </div>
+              </div>
             </div>
-            <div class="forum">
-                <h3>Forum</h3>
-                <ul>
-                    <a href="https://www.marmiton.org/forum/"><li>Questions / Réponses</li></a>
-                </ul>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Forum
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <a href="https://www.marmiton.org/forum/"><li>Questions / Réponses</li></a>
+                    </ul>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="index">
-            <h3>Index des ingrédients</h3>
-            <div class="choix">
-                <ul>
-                    <a href=""><li>A</li></a>
-                    <a href=""><li>B</li></a>
-                    <a href=""><li>C</li></a>
-                    <a href=""><li>D</li></a>
-                    <a href=""><li>E</li></a>
-                    <a href=""><li>F</li></a>
-                    <a href=""><li>G</li></a>
-                    <a href=""><li>H</li></a>
-                    <a href=""><li>I</li></a>
-                    <a href=""><li>J</li></a>
-                    <a href=""><li>K</li></a>
-                    <a href=""><li>L</li></a>
-                    <a href=""><li>M</li></a>
-                    <a href=""><li>N</li></a>
-                    <a href=""><li>O</li></a>
-                    <a href=""><li>P</li></a>
-                    <a href=""><li>Q</li></a>
-                    <a href=""><li>R</li></a>
-                    <a href=""><li>S</li></a>
-                    <a href=""><li>T</li></a>
-                    <a href=""><li>U</li></a>
-                    <a href=""><li>V</li></a>
-                    <a href=""><li>W</li></a>
-                    <a href=""><li>X</li></a>
-                    <a href=""><li>Y</li></a>
-                    <a href=""><li>Z</li></a>
-                </ul>
-            </div>
-        </div>
+          </div>
         <div class="footercontent">
             <p>Concocté avec ♥ par Marmiton</p>
             <div class="conditions">
                 <p>Tous droits réservés Marmiton.org - 1999-2023</p>
                 <p><a href="">Paramétrer les cookies</a> ● <a href="https://marmiton.welcomekit.co">Recrutement</a> ● <a href="https://www.marmiton.org/sp/aide/mentions-legales.html">Mentions légales</a> ● <a href="https://www.marmiton.org/sp/aide/conditions-generales-utilisation.html">Conditions Générales d'Utilisation</a> ● <a href="https://www.marmiton.org/sp/legal/conditions_generales_abonnement.html">Conditions Générales d'Abonnement</a> ● <a href="https://www.marmiton.org/contact">Contact</a> ● <a href="https://www.marmiton.org/aide/faq-foire-aux-questions-s4005514.html">FAQ</a> ● <a href="https://www.marmiton.org/sp/aide/politque-de-protection-des-donnees-personnelles.html">Politique de 
                     protection des données personnelles</a> ● <a href="https://www.marmiton.org/sp/aide/faq-protection-des-donnees-personnelles.html#NotDisplayCmp">Foire aux questions - Vos choix concernant l'utilisation de cookies</a>
-                    Pour des milliers de cocktails :<a href="https://www.1001cocktails.com"> 1001cocktails.com</a></p>
+                    Pour des milliers de cocktails :<a href="https://www.1001cocktails.com"> 1001cocktails.com</a>
+                </p>
             </div>
-
         </div>
     </footer>
+
+
+
+
+
+
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

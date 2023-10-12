@@ -18,50 +18,209 @@
     font-family: "filsonreg";
     src: url(../fonts/FilsonSoft-Regular.woff2);
 }
+@font-face {
+    font-family: "filsonbold";
+    src: url(../fonts/FilsonSoft-Bold.woff2);
+}
+@font-face {
+    font-family: "filsonbold2";
+    src: url(../fonts/FilsonSoft-Bold\ \(1\).woff2);
+}
+@font-face {
+    font-family: "filsonbold3";
+    src: url(../fonts/FilsonSoft-Bold\ \(2\).woff2);
+}
+@font-face {
+    font-family: "opensans";
+    src: url(../fonts/Open-Sans.woff2);
+}
 a {
     text-decoration: none;
 }
 
 body {
-    width: 999px;
+    max-width: 98vw;
     height: 100%;
     display: flex;
     flex-direction: column;
+
+}
+// .cuisine-rapide {
+//     width: 90%;
+//     height: 100vh;
+//     background-color: bisque;
+//     display: flex;    
+//     border-radius: 5%;
+//     margin-left: 2%;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     .risotto {
+//         height: 18vh;
+//         width: 90%;
+//         justify-content: center;
+//         display: flex;
+//         img {
+//             border-radius: 10%;
+//             margin-top: 12px;
+//         }
+//     }
+//     .dossier {
+//         display: flex;
+//         background-color: antiquewhite;
+//         width: 90%;
+//         height: 40vh;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//         h2 {
+//             font-size: 24px;
+//             font-family: filsonreg;
+//             color: #ff6f61;
+//             height: 3vh;
+//         }
+//         .description {
+//             display: flex;
+//             width: 100%;
+//             height: 5vh;
+//         }
+//     }  
+// }
+
+.dernieres-recettes {
+    width: 96%;
+    height: 27vh;
     margin-left: auto;
     margin-right: auto;
-}
-.cuisine-rapide {
-    width: 90%;
-    height: 100vh;
-    background-color: bisque;
-    display: flex;    
-    border-radius: 5%;
-    margin-left: 2%;
-    justify-content: center;
+    display: flex;
     flex-wrap: wrap;
-    .risotto {
-        height: 18vh;
-        width: 90%;
-        justify-content: center;
+    .head {
+        width: 100%;
+        height: 12%;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 22px;
+        font-family: 'filsonreg';
+    }
+    .recettes4 {
+        width: 100%;
+        height: 88%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .snickers {
+            width: 24%;
+            height: 100%;
+        }
+        .camembert {
+            width: 24%;
+            height: 100%;
+        }
+        .tortilla {
+            width: 24%;
+            height: 100%;
+        }
+        .sandwich {
+            width: 24%;
+            height: 100%;
+        }
+        a {
+            font-size: 18px;
+            font-family: 'filsonbold';
+            color: #5f5f5f;
+        }
         img {
             border-radius: 10%;
-            margin-top: 12px;
+        }
+        p{
+            font-size: 12px;
+            font-family: 'opensans';
+            color: #989898;
         }
     }
-    .dossier {
-        display: flex;
-        background-color: antiquewhite;
-        width: 90%;
-        height: 60vh;
-        justify-content: center;
-        h2 {
-            font-size: 24px;
-            font-family: filsonreg;
+}
+.mag {
+    width: 96%;
+    height: 35vh;
+    background-color: bisque;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    .offres {
+        width: 100%;
+        height: 45%;
+        text-align: center;
+        .title {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'filsonreg';
+            font-size: 22px;
+            font-weight: 400;
             color: #ff6f61;
+            }
+        p {
+            text-align: center;
+            font-family: 'opensans';
+            font-size: 14px;
+            font-weight: 600;
+            color: #3f3735;
+            line-height: 19px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        a {
+            text-decoration: none;
+            margin-top: 0.5rem;
+            padding: 10px 25px;
+            font-weight: 400;
+            font-size: 16px;
+            font-family: 'filsonreg';
+            line-height: 22px;
+            border-radius: 33px;
+            color: #ff6f61;
+            border: 1px solid rgba(255, 111, 97, 0.5);
+            min-width: 64px;
         }
     }
-    
+    .livres {
+        width: 100%;
+        height: 55%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        .livrepromo {
+            width: 33%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .rond {
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            background-color: #ff6f61;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+        .left {
+            position: absolute;
+            top: 45px;
+            left: 25px;
+            z-index: 1;
+            height: 162px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0 3px 6px 0;
+            transform: rotate(-7deg);
+        }
+        .right {
+            position: absolute;
+            top: 20px;
+            left: 130px;
+            height: 162px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0 3px 6px 0;
+            transform: rotate(7deg);
+        }
+    }
 }
 footer {
     width: 100%;
@@ -103,6 +262,7 @@ footer {
         margin-right: auto;
         background-color: #ff9b90;
         border-radius: 50px;
+        margin-bottom: 60px;
         
         p {
             color: white;
@@ -114,28 +274,20 @@ footer {
             margin-right: 30px;
         }
     }
-    .listefin {
-        height: 100%;
-        width: 100%;
-        margin-top: 60px;
-        h3 {
-            color: white;
-            font-size: 18.004px;
+    .accordion-item {
+        background-color: #ff6f61;
+        h2 {
+            background-color: #ff6f61;
             font-family: sansprosb;
-        }
-        h3, ul {
-            margin-bottom: 20px;
-            margin-left: 20px;
+            font-size: 18.004px;
         }
         ul, li {
             list-style: none;
             color: white;
-            font-size: 16.002px;
-            margin-left: 20px;
-            line-height: 52px;
         }
         li {
             font-family: sansproregu;
+            font-size: 16.002px;
         }
     }
     .index  {
@@ -188,8 +340,6 @@ footer {
             p {
                 width: 80%;
                 height: 2vh;
-                margin-left: auto;
-                margin-right: auto;
                 color: black;
                 font-size: 14px;
                 font-family: sansproregu;
