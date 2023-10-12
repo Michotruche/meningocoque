@@ -58,6 +58,17 @@ header nav ul div .euros {
   margin-right: 1vw;
   height: 3.5vh;
 }
+header nav ul div .login {
+  background-color: #FF6F61;
+  border-radius: 30px;
+  padding: 1vw 2vw;
+  display: flex;
+  align-items: center;
+}
+header nav ul div .signup {
+  color: #FF6F61;
+  text-decoration: underline;
+}
 
 main {
   width: 98vw;
@@ -288,10 +299,14 @@ main .actu .titre-actu p {
   body header {
     margin: 0;
     padding-top: 1vh;
+    width: 100%;
   }
   body header ul {
     margin: 0;
     padding-left: 1vw;
+  }
+  body header ul .titre-li {
+    color: #FF6F61;
   }
   body header .icons {
     height: 3vw;

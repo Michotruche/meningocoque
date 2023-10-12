@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Marmiton : 76585 recettes de cuisine coomentées et notées pour toutes les cuisines</title>
 </head>
@@ -12,24 +13,108 @@
 
         <nav>
 
-            <ul>
-                <li class="display-none-resp"><img class="icons" src="img/burger.svg" alt=""></li>
-                <li class="display-none"><img class="icons" src="img/burger_orange.svg" alt=""></li>
+            <ul class="d-flex justify-content-between">
+
+                <div class="dropdown display-none-resp">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="icons" src="img/burger.svg" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <a class="login" href="">Connexion</a>
+                                <a class="signup ms-2" href="">Inscription</a>
+                            </div>
+                            <p>Découvrez des recettes personnalisées en créant votre profil Marmiton</p>
+                        </div>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">Recettes par catégories</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">A découvrir</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">Idées recettes</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">En cuisine</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">Mes aides à la cuisine</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">Communauté</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="">Abonnez-vous</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="dropdown display-none">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="icons" src="img/burger_orange.svg" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="titre-li mt-2">Recettes par catégories</li>
+                        <li><a class="dropdown-item" href="#">Apéritifs</a></li>
+                        <li><a class="dropdown-item" href="#">Entrées</a></li>
+                        <li><a class="dropdown-item" href="#">Plats</a></li>
+                        <li><a class="dropdown-item" href="#">Desserts</a></li>
+                        <li><a class="dropdown-item" href="#">Boissons</a></li>
+                        <li><a class="dropdown-item" href="">Petit-déj/brunch</a></li>
+                        <li class="titre-li mt-4 mb-2">A découvrir</li>
+                        <li><a class="dropdown-item" href="#">Cours de cuisine</a></li>
+                        <li><a class="dropdown-item" href="#">Boutique Marmiton</a></li>
+                    </ul>
+                </div>
+    
                 <li><a href=""><img class="icons" src="img/Marmiton01.svg" alt=""></a></li>
+    
                 <div class="barre-recherche display-none">
                     <a href=""><img class="barre-icons" src="img/loupe_orange.svg" alt=""></a>
                     <label for="recherche">Je cherche</label>
                     <input type="search" name="recherche" id="" placeholder="une recette, un ingrédient, de l'aide...">
                     <a class="btn" href=""><img class="barre-icons" src="img/loupe_blanche.svg" alt=""></a>
                 </div>
+    
                 <div class="connexion display-none">
                     <a href=""><img class="barre-icons" src="img/user.svg" alt=""></a>
                     <a href="">Connexion</a>
                 </div>
+    
                 <div class="display-none-resp">
-                    <li><a href=""><img class="euros" src="img/Marmiton02.png" alt=""></a></li>
-                    <li><a href=""><img class="icons" src="img/loupe.svg" alt=""></a></li>
-                </div>
+                    <a href=""><img class="euros" src="img/Marmiton02.png" alt=""></a>
+                    <a href=""><img class="icons" src="img/loupe.svg" alt=""></a>
+                </div>    
+
             </ul>
 
             <ul class="l-2 display-none">
@@ -342,5 +427,7 @@
 
     </main>
     
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

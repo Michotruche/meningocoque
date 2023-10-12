@@ -61,6 +61,17 @@ header {
                 margin-right: 1vw;
                 height: 3.5vh;
             }
+            .login {
+                background-color: $orange;
+                border-radius: 30px;
+                padding: 1vw 2vw;
+                display: flex;
+                align-items: center;
+            }
+            .signup {
+                color: $orange;
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -292,9 +303,13 @@ main {
         header {
             margin: 0;
             padding-top: 1vh;
+            width: 100%;
             ul {
                 margin: 0;
                 padding-left: 1vw;
+                .titre-li {
+                    color: $orange;
+                }
             }
             .icons {
                 height: 3vw;
