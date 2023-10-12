@@ -103,6 +103,7 @@ main .banane .auteur p {
   font-family: "source sans pro";
   color: #989898;
   font-size: 0.75em;
+  margin-bottom: 0;
 }
 main .petite-div {
   width: 100%;
@@ -134,38 +135,39 @@ main .petite-div .petite-div-d .auteur p {
   padding-left: 1vw;
   font-family: "source sans pro";
   color: #989898;
+  margin-bottom: 0;
 }
-main .container {
+main .container-recettes {
   width: 100%;
   height: 43vh;
   display: flex;
   justify-content: space-between;
 }
-main .container .gratin {
+main .container-recettes .gratin {
   background: url(../img/gratin.webp) no-repeat;
   background-size: contain;
   border-radius: 10px;
 }
-main .container .croque {
+main .container-recettes .croque {
   background: url(../img/croque.webp) no-repeat;
   background-size: contain;
   border-radius: 10px;
 }
-main .container .tarte {
+main .container-recettes .tarte {
   background: url(../img/tarte.webp) no-repeat;
   background-size: contain;
   border-radius: 10px;
 }
-main .container .recette {
+main .container-recettes .recette {
   width: 32%;
   height: 100%;
 }
-main .container .recette .container-favoris {
+main .container-recettes .recette .container-favoris {
   display: flex;
   justify-content: end;
   padding: 1vw;
 }
-main .container .recette .container-favoris .favoris {
+main .container-recettes .recette .container-favoris .favoris {
   width: 3vw;
   height: 3vw;
   padding: 0.5vw;
@@ -176,40 +178,40 @@ main .container .recette .container-favoris .favoris {
   justify-content: center;
   align-items: center;
 }
-main .container .recette .container-favoris .favoris img {
+main .container-recettes .recette .container-favoris .favoris img {
   width: 2.5vw;
 }
-main .container .recette .container-play {
+main .container-recettes .recette .container-play {
   height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .container .recette .container-play .play {
+main .container-recettes .recette .container-play .play {
   height: 20%;
 }
-main .container .recette .container-titre-avis {
+main .container-recettes .recette .container-titre-avis {
   height: 25%;
   padding-left: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
-main .container .recette .container-titre-avis h3, main .container .recette .container-titre-avis p {
+main .container-recettes .recette .container-titre-avis h3, main .container-recettes .recette .container-titre-avis p {
   font-family: "open sans";
   color: white;
   margin-bottom: 0;
   margin-top: 0;
 }
-main .container .recette .container-titre-avis .container-star {
+main .container-recettes .recette .container-titre-avis .container-star {
   width: 40%;
   display: inline;
 }
-main .container .recette .container-titre-avis .container-star .star {
+main .container-recettes .recette .container-titre-avis .container-star .star {
   width: 2vw;
   display: inline;
 }
-main .container .recette .container-titre-avis .note {
+main .container-recettes .recette .container-titre-avis .note {
   display: inline;
 }
 main .bandeau-actus {
@@ -300,6 +302,7 @@ main .actu .titre-actu p {
     margin: 0;
     padding-top: 1vh;
     width: 100%;
+    position: unset;
   }
   body header ul {
     margin: 0;
@@ -372,6 +375,57 @@ main .actu .titre-actu p {
     background-color: white;
     border-radius: 20px;
     padding: 3vh 3vw;
+  }
+  body main h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 3vh;
+  }
+  body main .une h3 {
+    font-size: 0.8em;
+  }
+  body main .une .container-une .banane {
+    width: 58%;
+  }
+  body main .une .container-une .banane h3 {
+    font-size: 1.25em;
+  }
+  body main .une .container-une .div-droite {
+    width: 40%;
+  }
+  body main .une .container-une .div-droite .thumbnail {
+    width: 16vw;
+    margin-right: 1vw;
+  }
+  body main .une .container-une .div-droite h4 {
+    font-size: 1em;
+  }
+  body main .une .container-une .div-droite .auteur {
+    align-items: center;
+  }
+  body main .une .container-une .div-droite .auteur img {
+    width: 2vw;
+  }
+  body main .une .container-une .div-droite .auteur p {
+    font-size: 0.75em;
+  }
+  body main .container-recettes {
+    height: 80vh;
+  }
+  body main .container-actus {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .container-actus .actu {
+    width: 49%;
+    flex-direction: column;
+  }
+  body main .container-actus .actu .container-actu {
+    width: 100%;
+    display: flex;
+  }
+  body main .container-actus .actu .container-actu h3 {
+    font-size: 1em;
   }
 }
 
