@@ -46,6 +46,51 @@ body {
   flex-direction: column;
 }
 
+.coursdecuisine {
+  width: 96%;
+  height: 40vh;
+  background-color: rgba(255, 111, 97, 0.1019607843);
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.coursdecuisine .promo {
+  margin-top: 40px;
+  width: 100%;
+  height: 40%;
+}
+.coursdecuisine .promo .lancement {
+  font-family: "filsonreg";
+  font-size: 22px;
+  color: #ff6f61;
+  height: 20%;
+  margin-left: 24px;
+}
+.coursdecuisine .promo p {
+  margin-left: 24px;
+  color: #3f3735;
+  font-size: 16px;
+  font-family: "opensans";
+}
+.coursdecuisine .promo .moreinformation {
+  margin-left: 24px;
+  width: 95%;
+  transition: all 0.2s ease-in;
+  line-height: 2rem;
+  border-radius: 2rem;
+  font-size: 16px;
+  padding: 7px 2rem;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  font-family: "filsonreg";
+  outline: none;
+  background-color: #ff6f61;
+  color: white;
+}
+
 .dernieres-recettes {
   width: 96%;
   height: 27vh;
