@@ -42,6 +42,10 @@ hr {
     height: 2.5vh;
 }
 
+.box-shadow {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 header {
     width: 100%;
     background-color: white;
@@ -242,17 +246,17 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .container-fleche {
-            width: 2vw;
-            height: 2vw;
-            background-color: $orange;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 1vw;
-            }
+    }
+    .container-fleche {
+        width: 2vw;
+        height: 2vw;
+        background-color: $orange;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 1vw;
         }
     }
     .actu {
@@ -320,6 +324,47 @@ main {
                 color: $gris;
             }
         }
+    }
+    .hallocheeze {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1vh;
+        .halloween, .fromage {
+            width: 49.5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2vw;
+        }
+    }
+    .theme {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .rapide, .entrees, .plats, .desserts, .aperitifs, .sans-viande {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 32.5%;
+            padding: 2vw;
+            margin-bottom: 1vh;
+            img {
+                width: 5vw;
+            }
+        }
+    }
+    .bandeau-cuisine {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 img {
+            width: 5vw;
+            border-radius: 0;
+        }
+    }
+    .tendances {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 

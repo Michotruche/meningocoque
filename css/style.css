@@ -36,6 +36,10 @@ hr {
   height: 2.5vh;
 }
 
+.box-shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 header {
   width: 100%;
   background-color: white;
@@ -237,7 +241,7 @@ main .bandeau-actus {
   justify-content: space-between;
   align-items: center;
 }
-main .bandeau-actus .container-fleche {
+main .container-fleche {
   width: 2vw;
   height: 2vw;
   background-color: #FF6F61;
@@ -246,7 +250,7 @@ main .bandeau-actus .container-fleche {
   justify-content: center;
   align-items: center;
 }
-main .bandeau-actus .container-fleche img {
+main .container-fleche img {
   width: 1vw;
 }
 main .actu {
@@ -314,6 +318,47 @@ main .actu .titre-actu p {
   font-family: "open sans";
   font-size: 0.75em;
   color: #989898;
+}
+main .hallocheeze {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+main .hallocheeze .halloween, main .hallocheeze .fromage {
+  width: 49.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+}
+main .theme {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .theme .rapide, main .theme .entrees, main .theme .plats, main .theme .desserts, main .theme .aperitifs, main .theme .sans-viande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32.5%;
+  padding: 2vw;
+  margin-bottom: 1vh;
+}
+main .theme .rapide img, main .theme .entrees img, main .theme .plats img, main .theme .desserts img, main .theme .aperitifs img, main .theme .sans-viande img {
+  width: 5vw;
+}
+main .bandeau-cuisine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .bandeau-cuisine h2 img {
+  width: 5vw;
+  border-radius: 0;
+}
+main .tendances {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 1000px) {
