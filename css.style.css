@@ -36,152 +36,145 @@ hr {
   height: 2.5vh;
 }
 
-header {
+body {
+  width: 100%;
+}
+body header {
   width: 100%;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: sticky;
   top: 0;
 }
-header nav ul {
+body header nav ul {
   width: 100%;
   padding: 0.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav ul div {
+body header nav ul div {
   display: flex;
   align-items: center;
 }
-header nav ul div .euros {
+body header nav ul div .euros {
   margin-right: 1vw;
   height: 3.5vh;
 }
-header nav ul div .login {
+body header nav ul div .login {
   background-color: #FF6F61;
   border-radius: 30px;
   padding: 1vw 2vw;
   display: flex;
   align-items: center;
 }
-header nav ul div .signup {
+body header nav ul div .signup {
   color: #FF6F61;
   text-decoration: underline;
 }
-
-main {
-  width: 96vw;
-  margin-left: auto;
-  margin-right: auto;
+body main {
+  width: 98vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
-main h2 {
+body main h2 {
   font-family: "filson soft";
-  font-size: 1.5em;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
 }
-main h4 {
+body main h4 {
   font-family: "open sans";
-  font-size: 0.75em;
   margin-top: 1vh;
   margin-bottom: 1vh;
 }
-main .container-une .banane {
+body main .container-une .banane {
   width: 100%;
 }
-main .container-une .banane h3 a {
+body main .container-une .banane h3 a {
   font-family: "filson soft";
-  font-size: 0.5em;
   color: #FF6F61;
 }
-main .container-une .banane img {
+body main .container-une .banane img {
   width: 100%;
 }
-main .container-une .banane .auteur {
+body main .container-une .banane .auteur {
   display: flex;
   align-items: center;
 }
-main .container-une .banane .auteur img {
+body main .container-une .banane .auteur img {
   width: 3vw;
 }
-main .container-une .banane .auteur p {
+body main .container-une .banane .auteur p {
   padding-left: 0.5vw;
   font-family: "source sans pro";
   color: #989898;
   font-size: 0.75em;
   margin-bottom: 0;
 }
-main .container-une .petite-div {
+body main .container-une .petite-div {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-main .container-une .petite-div .thumbnail {
-  width: 15%;
+body main .container-une .petite-div .thumbnail {
+  width: 20%;
 }
-main .container-une .petite-div .thumbnail img {
+body main .container-une .petite-div .thumbnail img {
   width: 100%;
 }
-main .container-une .petite-div .petite-div-d {
-  width: 83%;
+body main .container-une .petite-div .petite-div-d {
+  width: 78%;
 }
-main .container-une .petite-div .petite-div-d h3 {
-  margin-top: 0;
-}
-main .container-une .petite-div .petite-div-d h3 a {
+body main .container-une .petite-div .petite-div-d h3 a {
   font-family: "filson soft";
   color: #FF6F61;
-  font-size: 0.5em;
+  font-size: 1em;
 }
-main .container-une .petite-div .petite-div-d .auteur {
+body main .container-une .petite-div .petite-div-d .auteur {
   display: flex;
   align-items: center;
 }
-main .container-une .petite-div .petite-div-d .auteur img {
+body main .container-une .petite-div .petite-div-d .auteur img {
   width: 3vw;
 }
-main .container-une .petite-div .petite-div-d .auteur p {
+body main .container-une .petite-div .petite-div-d .auteur p {
   padding-left: 1vw;
   font-family: "source sans pro";
   color: #989898;
-  font-size: 0.75em;
   margin-bottom: 0;
 }
-main .container-recettes {
+body main .container-recettes {
   width: 100%;
-  height: 41.5vh;
+  height: 43vh;
   display: flex;
   justify-content: space-between;
 }
-main .container-recettes .gratin {
+body main .container-recettes .gratin {
   background: url(../img/gratin.webp) no-repeat;
   background-size: contain;
   border-radius: 10px;
 }
-main .container-recettes .croque {
+body main .container-recettes .croque {
   background: url(../img/croque.webp) no-repeat;
   background-size: contain;
   border-radius: 10px;
 }
-main .container-recettes .tarte {
+body main .container-recettes .tarte {
   background: url(../img/tarte.webp) no-repeat;
   background-size: contain;
   border-radius: 10px;
 }
-main .container-recettes .recette {
+body main .container-recettes .recette {
   width: 32%;
   height: 100%;
 }
-main .container-recettes .recette .container-favoris {
+body main .container-recettes .recette .container-favoris {
   display: flex;
   justify-content: end;
   padding: 1vw;
 }
-main .container-recettes .recette .container-favoris .favoris {
-  width: 3.5vw;
-  height: 3.5vw;
-  padding: 1vw;
+body main .container-recettes .recette .container-favoris .favoris {
+  width: 3vw;
+  height: 3vw;
+  padding: 0.5vw;
   border: 1px solid #FF6F61;
   border-radius: 50%;
   background-color: white;
@@ -189,55 +182,49 @@ main .container-recettes .recette .container-favoris .favoris {
   justify-content: center;
   align-items: center;
 }
-main .container-recettes .recette .container-favoris .favoris img {
+body main .container-recettes .recette .container-favoris .favoris img {
   width: 2.5vw;
 }
-main .container-recettes .recette .container-play {
+body main .container-recettes .recette .container-play {
   height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .container-recettes .recette .container-play .play {
+body main .container-recettes .recette .container-play .play {
   height: 20%;
 }
-main .container-recettes .recette .container-titre-avis {
+body main .container-recettes .recette .container-titre-avis {
   height: 25%;
   padding-left: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
-main .container-recettes .recette .container-titre-avis h3, main .container-recettes .recette .container-titre-avis p {
+body main .container-recettes .recette .container-titre-avis h3, body main .container-recettes .recette .container-titre-avis p {
   font-family: "open sans";
   color: white;
   margin-bottom: 0;
   margin-top: 0;
 }
-main .container-recettes .recette .container-titre-avis h3 {
-  font-size: 1em;
-  font-weight: bold;
-}
-main .container-recettes .recette .container-titre-avis .container-note {
-  height: 2vw;
-  display: flex;
-  margin-bottom: 0.5vh;
-}
-main .container-recettes .recette .container-titre-avis .container-star {
-  width: 35%;
+body main .container-recettes .recette .container-titre-avis .container-star {
+  width: 40%;
   display: inline;
 }
-main .container-recettes .recette .container-titre-avis .container-star .star {
-  width: 1.5vw;
+body main .container-recettes .recette .container-titre-avis .container-star .star {
+  width: 2vw;
   display: inline;
 }
-main .bandeau-actus {
+body main .container-recettes .recette .container-titre-avis .note {
+  display: inline;
+}
+body main .bandeau-actus {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-main .bandeau-actus .container-fleche {
+body main .bandeau-actus .container-fleche {
   width: 2vw;
   height: 2vw;
   background-color: #FF6F61;
@@ -246,70 +233,59 @@ main .bandeau-actus .container-fleche {
   justify-content: center;
   align-items: center;
 }
-main .bandeau-actus .container-fleche img {
+body main .bandeau-actus .container-fleche img {
   width: 1vw;
 }
-main .actu {
+body main .actu {
   width: 100%;
+  display: flex;
 }
-main .actu .sucre {
+body main .actu .sucre {
   background: url(../img/Marmiton08.jpg) no-repeat;
   background-size: contain;
 }
-main .actu .riz {
+body main .actu .riz {
   background: url(../img/Marmiton07.jpg) no-repeat;
   background-size: contain;
 }
-main .actu .pdt {
+body main .actu .pdt {
   background: url(../img/pdt.jpg) no-repeat;
   background-size: contain;
 }
-main .actu .spritz {
+body main .actu .spritz {
   background: url(../img/spritz.jpg) no-repeat;
   background-size: contain;
 }
-main .actu .entrees {
+body main .actu .entrees {
   background: url(../img/entrees.jpg) no-repeat;
   background-size: contain;
 }
-main .actu .the {
+body main .actu .the {
   background: url(../img/the.jpg) no-repeat;
   background-size: contain;
 }
-main .actu .container-actus {
-  display: flex;
-  flex-direction: column;
-}
-main .actu .actu {
-  display: flex;
-  flex-direction: column;
-}
-main .actu .container-actu {
-  display: flex;
-}
-main .actu .image-actu {
-  width: 15vw;
+body main .actu .image-actu {
+  width: 15VW;
   height: 15vw;
   border-radius: 10px;
 }
-main .actu .image-actu .container-icon {
+body main .actu .image-actu .container-icon {
   display: flex;
   justify-content: end;
 }
-main .actu .image-actu .container-icon img {
+body main .actu .image-actu .container-icon img {
   margin-right: 0.5vw;
   width: 3vw;
 }
-main .actu .titre-actu {
+body main .actu .titre-actu {
   margin-left: 2vw;
   width: 75%;
 }
-main .actu .titre-actu h3 {
+body main .actu .titre-actu h3 {
   margin-bottom: 0;
   font-family: "open sans";
-  font-size: 1em;
 }
-main .actu .titre-actu p {
+body main .actu .titre-actu p {
   margin-top: 0;
   font-family: "open sans";
   font-size: 0.75em;
@@ -326,76 +302,76 @@ main .actu .titre-actu p {
   body {
     background-color: #EFEFEF;
   }
-  header {
+  body header {
     margin: 0;
     padding-top: 1vh;
     width: 100%;
     position: unset;
   }
-  header ul {
+  body header ul {
     margin: 0;
     padding-left: 1vw;
   }
-  header ul .titre-li {
+  body header ul .titre-li {
     color: #FF6F61;
   }
-  header .icons {
+  body header .icons {
     height: 3vw;
   }
-  header .barre-recherche {
+  body header .barre-recherche {
     border: 1px solid #F1EEED;
     border-radius: 50px;
     padding: 0.5vw 1vw;
     display: flex;
     align-items: center;
   }
-  header .barre-recherche label {
+  body header .barre-recherche label {
     margin-left: 1vw;
     margin-right: 0.5vw;
   }
-  header .barre-recherche input[type=search] {
+  body header .barre-recherche input[type=search] {
     width: 40vw;
     border: none;
   }
-  header .barre-recherche a {
+  body header .barre-recherche a {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  header .barre-recherche .btn {
+  body header .barre-recherche .btn {
     width: 3vw;
     height: 3vw;
     background-color: #FF6F61;
     border-radius: 50%;
   }
-  header .barre-icons {
+  body header .barre-icons {
     height: 1.5vw;
   }
-  header .connexion {
+  body header .connexion {
     background-color: #FF6F61;
     border-radius: 30px;
     padding: 1vw 2vw;
     display: flex;
     align-items: center;
   }
-  header .connexion a {
+  body header .connexion a {
     color: white;
   }
-  header .connexion a img {
+  body header .connexion a img {
     margin-right: 1vw;
   }
-  header .l-2 {
+  body header .l-2 {
     width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: #F9F9F9;
   }
-  header .l-2 img {
+  body header .l-2 img {
     width: 3vw;
     height: 3vw;
     margin-right: 1vw;
   }
-  main {
+  body main {
     width: 80%;
     margin-top: 2vh;
     margin-left: auto;
@@ -404,68 +380,61 @@ main .actu .titre-actu p {
     border-radius: 20px;
     padding: 3vh 3vw;
   }
-  main h2 {
+  body main h2 {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 3vh;
   }
-  main .une h3 {
+  body main .une h3 {
     font-size: 0.8em;
   }
-  main .une .container-une {
+  body main .une .container-une {
     display: flex;
     justify-content: space-between;
   }
-  main .une .container-une .banane {
+  body main .une .container-une .banane {
     width: 58%;
   }
-  main .une .container-une .banane h3 {
+  body main .une .container-une .banane h3 {
     font-size: 1.25em;
   }
-  main .une .container-une .div-droite {
+  body main .une .container-une .div-droite {
     width: 40%;
   }
-  main .une .container-une .div-droite .thumbnail {
+  body main .une .container-une .div-droite .thumbnail {
     width: 16vw;
     margin-right: 1vw;
   }
-  main .une .container-une .div-droite h4 {
+  body main .une .container-une .div-droite h4 {
     font-size: 1em;
   }
-  main .une .container-une .div-droite .auteur {
+  body main .une .container-une .div-droite .auteur {
     align-items: center;
   }
-  main .une .container-une .div-droite .auteur img {
+  body main .une .container-une .div-droite .auteur img {
     width: 2vw;
   }
-  main .une .container-une .div-droite .auteur p {
+  body main .une .container-une .div-droite .auteur p {
     font-size: 0.75em;
   }
-  main .container-recettes {
-    height: 55vh;
+  body main .container-recettes {
+    height: 80vh;
   }
-  main .container-recettes .recette {
-    height: 100%;
-    margin-right: 0;
-    padding-right: 0;
-  }
-  main .container-actus {
+  body main .container-actus {
     display: flex;
     flex-wrap: wrap;
   }
-  main .container-actus .actu {
+  body main .container-actus .actu {
     width: 49%;
     flex-direction: column;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
   }
-  main .container-actus .actu .container-actu {
+  body main .container-actus .actu .container-actu {
     width: 100%;
     display: flex;
   }
-  main .container-actus .actu .container-actu h3 {
+  body main .container-actus .actu .container-actu h3 {
     font-size: 1em;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.style.css.map */
