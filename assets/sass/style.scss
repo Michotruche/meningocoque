@@ -34,10 +34,19 @@
     font-family: "opensans";
     src: url(../fonts/Open-Sans.woff2);
 }
+@font-face {
+    font-family: pgpicons;
+    src: url(../fonts/pgp-icons.ttf);
+}
+.etoile::before{
+    font-family: pgpicons;
+    font-size: 42px;
+    color: #ff6f61;
+    content: '\e948';
+}
 a {
     text-decoration: none;
 }
-
 body {
     max-width: 98vw;
     height: 100%;
@@ -84,6 +93,162 @@ body {
 //         }
 //     }  
 // }
+.menudelasemaine {
+    width: 96%;
+    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .head {
+        width: 100%;
+        height: 2%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        font-family: 'filsonbold';
+    }
+    img{
+        border-radius: 2%;
+    }
+    .jour {
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .days {
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            width: 4%;
+            background-color: #ff6f61;
+            height: 80%;
+            border-radius: 40%;
+            color: white;
+            font-size: 12px;
+            font-family: 'opensans';
+        }
+        .days2 {
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            width: 3%;
+            height: 100%;
+            color: black;
+            font-family: 'opensans';
+            font-size: 12px;
+        }
+        .date{
+            font-size: 16px;
+        }
+    }
+}
+.newsletters {
+    width: 96%;
+    height: 35vh;
+    background-color: #ff6f611a;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .news {
+        width: 35%;
+        height: 40%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        h3 {
+            margin-top: 30px;
+            font-family: 'filsonbold';
+            font-size: 24px;
+            color: #3f3735;
+            height: 15%;
+
+        }
+        .sabonner {
+            width: 50%;
+            height: 30%;
+            transition: all 0.2s ease-in;
+            line-height: 2rem;
+            border-radius: 2rem;
+            font-size: 16px;
+            padding: 7px 2rem;
+            font-weight: 500;
+            text-overflow: ellipsis;
+            cursor: pointer;
+            font-family: 'filsonreg';
+            outline: none;
+            background-color: #ff6f61;
+            color: white;
+        }
+    }
+    .conseils {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        .conseils1 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            span {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 15px;
+                font-family: 'opensans';
+                color: black;
+            }
+        }
+    }
+}
+.toprecettes {
+    width: 96%;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    .head {
+        width: 100%;
+        height: 12%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 22px;
+        font-family: 'filsonreg';
+    }
+    .toprecettes2 {
+        width: 100%;
+        height: 88%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .top1 {
+            width: 24%;
+            height: 100%;
+        }
+        a {
+            font-size: 18px;
+            font-family: 'filsonbold';
+            color: #5f5f5f;
+        }
+        img {
+            border-radius: 10%;
+        }
+    }
+}
 .coursdecuisine{
     width: 96%;
     height: 40vh;
