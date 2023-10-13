@@ -362,9 +362,37 @@ main {
             border-radius: 0;
         }
     }
+    .container-nestle {
+        display: flex;
+        width: 100%;
+        height: 30vh;
+        .nestle {
+            height: 100%;
+            width: 24.5%;
+        }
+    }
+    .ingredients {
+        display: flex;
+        justify-content: space-between;
+        .ingredient {
+            width: 9%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 5vw;
+            }
+        }
+    }
     .tendances {
         display: flex;
         flex-wrap: wrap;
+        a {
+            color: $gris;
+            margin-left: 0.25vw;
+            margin-right: 0.25vw;
+        }
     }
 }
 
