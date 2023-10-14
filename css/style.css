@@ -177,25 +177,6 @@ main .container-recettes .recette {
   width: 32%;
   height: 100%;
 }
-main .container-recettes .recette .container-favoris {
-  display: flex;
-  justify-content: end;
-  padding: 1vw;
-}
-main .container-recettes .recette .container-favoris .favoris {
-  width: 3.5vw;
-  height: 3.5vw;
-  padding: 1vw;
-  border: 1px solid #FF6F61;
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main .container-recettes .recette .container-favoris .favoris img {
-  width: 2.5vw;
-}
 main .container-recettes .recette .container-play {
   height: 60%;
   display: flex;
@@ -234,6 +215,25 @@ main .container-recettes .recette .container-titre-avis .container-star {
 main .container-recettes .recette .container-titre-avis .container-star .star {
   width: 1.5vw;
   display: inline;
+}
+main .container-favoris {
+  display: flex;
+  justify-content: end;
+  padding: 1vw;
+}
+main .container-favoris .favoris {
+  width: 3.5vw;
+  height: 3.5vw;
+  padding: 1vw;
+  border: 1px solid #FF6F61;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container-favoris .favoris img {
+  width: 2.5vw;
 }
 main .bandeau-actus {
   width: 100%;
@@ -358,12 +358,54 @@ main .bandeau-cuisine h2 img {
 }
 main .container-nestle {
   display: flex;
+  justify-content: space-between;
   width: 100%;
-  height: 30vh;
+  height: 38vh;
 }
 main .container-nestle .nestle {
+  width: 23.5%;
   height: 100%;
-  width: 24.5%;
+}
+main .container-nestle .tarte-pomme {
+  background: url(../img/tarte_pommes.webp) no-repeat;
+  background-size: contain;
+  height: 59%;
+  width: 100%;
+  border-radius: 10px;
+}
+main .container-nestle .gateau-yaourt {
+  background: url(../img/gateau_yaourt.webp) no-repeat;
+  background-size: contain;
+  height: 59%;
+  width: 100%;
+  border-radius: 10px;
+}
+main .container-nestle .muffins {
+  background: url(../img/muffins_choco.webp) no-repeat;
+  background-size: contain;
+  height: 59%;
+  width: 100%;
+  border-radius: 10px;
+}
+main .container-nestle .churros {
+  background: url(../img/churros.webp) no-repeat;
+  background-size: contain;
+  height: 59%;
+  width: 100%;
+  border-radius: 10px;
+}
+main .container-nestle .container-note {
+  height: 2vw;
+  display: flex;
+  margin-bottom: 0.5vh;
+}
+main .container-nestle .container-star {
+  width: 42%;
+  display: inline;
+}
+main .container-nestle .container-star .star {
+  width: 1.5vw;
+  display: inline;
 }
 main .ingredients {
   display: flex;
@@ -377,7 +419,7 @@ main .ingredients .ingredient {
   align-items: center;
 }
 main .ingredients .ingredient img {
-  width: 5vw;
+  width: 4vw;
 }
 main .tendances {
   display: flex;
