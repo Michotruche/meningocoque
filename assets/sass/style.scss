@@ -53,45 +53,156 @@ body {
     display: flex;
     flex-direction: column;
 }
-// .cuisine-rapide {
-//     width: 90%;
-//     height: 100vh;
-//     background-color: bisque;
-//     display: flex;    
-//     border-radius: 5%;
-//     margin-left: 2%;
-//     justify-content: center;
-//     flex-wrap: wrap;
-//     .risotto {
-//         height: 18vh;
-//         width: 90%;
-//         justify-content: center;
-//         display: flex;
-//         img {
-//             border-radius: 10%;
-//             margin-top: 12px;
-//         }
-//     }
-//     .dossier {
-//         display: flex;
-//         background-color: antiquewhite;
-//         width: 90%;
-//         height: 40vh;
-//         justify-content: center;
-//         flex-wrap: wrap;
-//         h2 {
-//             font-size: 24px;
-//             font-family: filsonreg;
-//             color: #ff6f61;
-//             height: 3vh;
-//         }
-//         .description {
-//             display: flex;
-//             width: 100%;
-//             height: 5vh;
-//         }
-//     }  
-// }
+.main-recette-fast{
+    position: relative;
+    background-color: rgba(255, 111, 97, 0.102);
+    margin: 50px 0;
+    padding: 20px 15px 15px;
+    width: 959px;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    .rond-gauche{
+        position:absolute;
+        z-index: 1;
+        width: 166px;
+        height: 166px;
+        background-color: rgba(255, 111, 97, 0.2);
+        border-radius: 50%;
+        top: 151px;
+        left: -55px;
+    }
+    .rond-top{
+        position:absolute;
+        z-index: 1;
+        width: 330px;
+        height: 330px;
+        background-color: rgba(255, 111, 97, 0.2);
+        border-radius: 50%;
+        // top: -415px;
+        // left: 640px;
+        top: -247.5px;
+        left: 70%;
+    }
+    .rond-droite{
+        position:absolute;
+        z-index: 1;
+        width: 330px;
+        height: 330px;
+        background-color: rgba(255, 111, 97, 0.2);
+        border-radius: 50%;
+        // top: -450px;
+        // right: -900px;
+        top: 95px;
+        right: -288px;
+    }
+    .block-home-folder{
+        position: relative;
+        z-index: 2;
+       .img-folder{
+            position: relative;
+            margin: 0 auto 30px;
+            height: 190px;
+            min-width: 310px;
+            width: 100%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                max-width: 100%;
+                object-fit: cover;
+            }
+       }
+       .content-folder{
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+            h2{
+                margin: 0 0 20px;
+                font-family: 'filsonreg';
+                font-size: 20px;
+                color: #ff6f61;
+                font-weight: 700;
+                text-align: center;
+            }
+            p{
+                margin-bottom: 20px;
+                font-family: 'opensans';
+                font-size: 16px;
+                color: #3f3735;
+                font-weight: 400;
+            }
+            button{
+                width: 90%;
+                padding: 10px 25px;
+                border: 1px solid rgba(255, 111, 97, 0.5);
+                border-radius: 33px;
+                color: #ff6f61;
+                font-family: 'filsonreg';
+                font-size: 16px;
+                background: local;
+                line-height: 18px;
+            }
+        }
+    }
+    .block-home-container{
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #3f3735;
+            font-family: 'opensans';
+            font-weight: 700;
+        }
+        .box-img-4x{
+            height: 100%;
+            margin-left: 1px;
+            .card-img{
+                width: 449px;
+                height: 524px;
+                .box-container-img{
+                    height: 449px;
+                    .img-card-1{
+                        position: relative;
+                        img{
+                            width: 100%;
+                            max-width: 100%;
+                            border-radius: 15px;
+                        }
+                    }
+                    .img-card-2{
+                        position: relative;
+                        z-index: 4;
+                        top: -435px;
+                        right:-410px;
+                        img{
+                            filter: invert(1);
+                        }
+                    }
+                }
+                .box-container-title{
+                    text-align: center;
+                    color: #3f3735;
+                    a{
+                        height: 50px;
+                        font-size: 16px;
+                        line-height: 25px;
+                        color: #3f3735;
+                        font-family: 'opensans';
+                        font-weight: 600;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
 .recettesdesaisons{
     height: 175vh;
     width: 96%;
@@ -132,7 +243,6 @@ body {
         height: 42vh;
         flex-wrap: wrap;
         display: flex;
-        justify-content: space-around;
         p{
             font-size: 15px;
         }

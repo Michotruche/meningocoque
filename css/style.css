@@ -50,6 +50,153 @@ body {
   flex-direction: column;
 }
 
+.main-recette-fast {
+  position: relative;
+  background-color: rgba(255, 111, 97, 0.102);
+  margin: 50px 0;
+  padding: 20px 15px 15px;
+  width: 959px;
+  overflow: hidden;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.main-recette-fast .rond-gauche {
+  position: absolute;
+  z-index: 1;
+  width: 166px;
+  height: 166px;
+  background-color: rgba(255, 111, 97, 0.2);
+  border-radius: 50%;
+  top: 151px;
+  left: -55px;
+}
+.main-recette-fast .rond-top {
+  position: absolute;
+  z-index: 1;
+  width: 330px;
+  height: 330px;
+  background-color: rgba(255, 111, 97, 0.2);
+  border-radius: 50%;
+  top: -247.5px;
+  left: 70%;
+}
+.main-recette-fast .rond-droite {
+  position: absolute;
+  z-index: 1;
+  width: 330px;
+  height: 330px;
+  background-color: rgba(255, 111, 97, 0.2);
+  border-radius: 50%;
+  top: 95px;
+  right: -288px;
+}
+.main-recette-fast .block-home-folder {
+  position: relative;
+  z-index: 2;
+}
+.main-recette-fast .block-home-folder .img-folder {
+  position: relative;
+  margin: 0 auto 30px;
+  height: 190px;
+  min-width: 310px;
+  width: 100%;
+  overflow: hidden;
+}
+.main-recette-fast .block-home-folder .img-folder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.main-recette-fast .block-home-folder .content-folder {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main-recette-fast .block-home-folder .content-folder h2 {
+  margin: 0 0 20px;
+  font-family: "filsonreg";
+  font-size: 20px;
+  color: #ff6f61;
+  font-weight: 700;
+  text-align: center;
+}
+.main-recette-fast .block-home-folder .content-folder p {
+  margin-bottom: 20px;
+  font-family: "opensans";
+  font-size: 16px;
+  color: #3f3735;
+  font-weight: 400;
+}
+.main-recette-fast .block-home-folder .content-folder button {
+  width: 90%;
+  padding: 10px 25px;
+  border: 1px solid rgba(255, 111, 97, 0.5);
+  border-radius: 33px;
+  color: #ff6f61;
+  font-family: "filsonreg";
+  font-size: 16px;
+  background: local;
+  line-height: 18px;
+}
+.main-recette-fast .block-home-container {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.main-recette-fast .block-home-container h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #3f3735;
+  font-family: "opensans";
+  font-weight: 700;
+}
+.main-recette-fast .block-home-container .box-img-4x {
+  height: 100%;
+  margin-left: 1px;
+}
+.main-recette-fast .block-home-container .box-img-4x .card-img {
+  width: 449px;
+  height: 524px;
+}
+.main-recette-fast .block-home-container .box-img-4x .card-img .box-container-img {
+  height: 449px;
+}
+.main-recette-fast .block-home-container .box-img-4x .card-img .box-container-img .img-card-1 {
+  position: relative;
+}
+.main-recette-fast .block-home-container .box-img-4x .card-img .box-container-img .img-card-1 img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+.main-recette-fast .block-home-container .box-img-4x .card-img .box-container-img .img-card-2 {
+  position: relative;
+  z-index: 4;
+  top: -435px;
+  right: -410px;
+}
+.main-recette-fast .block-home-container .box-img-4x .card-img .box-container-img .img-card-2 img {
+  filter: invert(1);
+}
+.main-recette-fast .block-home-container .box-img-4x .card-img .box-container-title {
+  text-align: center;
+  color: #3f3735;
+}
+.main-recette-fast .block-home-container .box-img-4x .card-img .box-container-title a {
+  height: 50px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #3f3735;
+  font-family: "opensans";
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .recettesdesaisons {
   height: 175vh;
   width: 96%;
@@ -91,7 +238,6 @@ body {
   height: 42vh;
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-around;
 }
 .recettesdesaisons .un p, .recettesdesaisons .deux p, .recettesdesaisons .trois p {
   font-size: 15px;
