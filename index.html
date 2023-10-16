@@ -3,19 +3,723 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Marmitton</title>
+    <title>Marmiton : 76585 recettes de cuisine coomentées et notées pour toutes les cuisines</title>
+
 </head>
 <body>
 
     <header>
-        <ul>
-            <li><a href=""><img src="img/burger.svg" alt=""></a></li>
-            <li><a href=""><img src="img/Marmiton01.svg" alt=""></a></li>
-            <li><label for="recherche">Je chercher</label><input type="search" name="recherche" id="" placeholder="une recette, un ingrédient, de l'aide..."></li>
-            <li></li>
-        </ul>
-    </header>
+
+        <nav>
+
+            <ul class="d-flex justify-content-between">
+
+                <div class="dropdown display-none-resp">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="icons" src="img/burger.svg" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <a class="login" href="">Connexion</a>
+                                <a class="signup ms-2" href="">Inscription</a>
+                            </div>
+                            <p>Découvrez des recettes personnalisées en créant votre profil Marmiton</p>
+                        </div>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">Recettes par catégories</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">A découvrir</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">Idées recettes</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">En cuisine</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">Mes aides à la cuisine</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="#">Communauté</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="d-flex justify-content-between">
+                            <a class="dropdown-item" href="">Abonnez-vous</a>
+                            <a class="dropdown-item" href="#">
+                                <img class="icons" src="img/fleche_droite.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
     
+                <div class="dropdown display-none">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="icons" src="img/burger_orange.svg" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="titre-li mt-2">Recettes par catégories</li>
+                        <li><a class="dropdown-item" href="#">Apéritifs</a></li>
+                        <li><a class="dropdown-item" href="#">Entrées</a></li>
+                        <li><a class="dropdown-item" href="#">Plats</a></li>
+                        <li><a class="dropdown-item" href="#">Desserts</a></li>
+                        <li><a class="dropdown-item" href="#">Boissons</a></li>
+                        <li><a class="dropdown-item" href="">Petit-déj/brunch</a></li>
+                        <li class="titre-li mt-4 mb-2">A découvrir</li>
+                        <li><a class="dropdown-item" href="#">Cours de cuisine</a></li>
+                        <li><a class="dropdown-item" href="#">Boutique Marmiton</a></li>
+                    </ul>
+                </div>
+    
+                <li><a href=""><img class="icons" src="img/Marmiton01.svg" alt=""></a></li>
+    
+                <div class="barre-recherche display-none">
+                    <a href=""><img class="barre-icons" src="img/loupe_orange.svg" alt=""></a>
+                    <label for="recherche">Je cherche</label>
+                    <input type="search" name="recherche" id="" placeholder="une recette, un ingrédient, de l'aide...">
+                    <a class="btn" href=""><img class="barre-icons" src="img/loupe_blanche.svg" alt=""></a>
+                </div>
+    
+                <div class="connexion display-none">
+                    <a href=""><img class="barre-icons" src="img/user.svg" alt=""></a>
+                    <a href="">Connexion</a>
+                </div>
+    
+                <div class="display-none-resp">
+                    <a href=""><img class="euros" src="img/Marmiton02.png" alt=""></a>
+                    <a href=""><img class="icons" src="img/loupe.svg" alt=""></a>
+                </div>    
+
+            </ul>
+
+            <ul class="l-2 display-none">
+
+                <div>
+                    <img src="img/mag.svg" alt="">
+                    <li><a href="">Le magazine</a></li>
+                </div>
+
+                <div>
+                    <img src="img/Marmiton02.png" alt="">
+                    <li><a href="">Cuisiner à petit prix</a></li>
+                </div>
+
+                <div>
+                    <img src="img/actus.svg" alt="">
+                    <li><a href="">Actus</a></li>
+                </div>
+
+                <li><a href="">Mieux manger</a></li>
+                <li><a href=""><b>Recette au hassard</b></a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="une">
+
+            <h2>A la une Marmiton</h2>
+
+            <div class="container-une">
+
+                <div class="banane">
+
+                    <a href=""><img src="img/banane.png" alt=""></a>
+                    <h3><a href="">CUISINE DU QUOTIDIEN</a></h3>
+                    <h4><a href="">Pourquoi vous devriez laver vos bananes avant de les éplucher</a></h4>
+
+                    <div class="auteur">
+                        <a href=""><img src="img/wilson.webp" alt=""></a>
+                        <p>par Héloïse Wilson</p>
+                    </div>
+                    
+                </div>
+
+                <hr class="display-none-resp">
+
+                <div class="div-droite">
+
+                    <div class="petite-div">
+
+                        <a class="thumbnail" href=""><img src="img/patate.png" alt=""></a>
+                        <div class="petite-div-d">
+                            <h3><a href="">CUISINE DU QUOTIDIEN</a></h3>
+                            <h4><a href="">L'astuce toute bête mais incoutournable pour éplucher une courge butternut facilement</a></h4>
+    
+                            <div class="auteur">
+                                <a href=""><img src="img/huar.webp" alt=""></a>
+                                <p>par Adeline Huar</p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+    
+                    <hr>
+    
+                    <div class="petite-div">
+                        <a class="thumbnail" href=""><img src="img/pain.png" alt=""></a>
+                        <div class="petite-div-d">
+                            <h3><a href="">MIEUX MANGER</a></h3>
+                            <h4><a href="">Baguette, pain complet ou au céréales : voici le meilleur pain pour votre santé selon un médecin</a></h4>
+    
+                            <div class="auteur">
+                                <a href=""><img src="img/ordonneau.webp" alt=""></a>
+                                <p>par Camille Ordonneau</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="petite-div">
+                        <a class="thumbnail" href=""><img src="img/intermache.png" alt=""></a>
+    
+                        <div class="petite-div-d">
+    
+                            <h3><a href="">MIEUX ACHETER</a></h3>
+                            <h4><a href="">Ces supermarchés vont bientôt devenir des Intermarché : découvrez si le vôtre est concerné</a></h4>
+    
+                            <div class="auteur">
+                                <a href=""><img src="img/carracillo.jpeg" alt=""></a>
+                                <p>par Faustine Carracillo</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="recettes-jour">
+
+            <h2>Les recettes du jour</h2>
+
+            <div class="container-recettes">
+                
+                <div class="recette gratin">
+                    
+                    <div class="container-favoris">
+                        <div class="favoris">
+                            <img class="like" src="img/Marmiton04.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="container-play">
+                        <img class="play" src="img/Marmiton05.svg" alt="">
+                    </div>
+                    
+                    <div class="container-titre-avis">
+                        <h3>Gratin de pâtes moelleux, facile et pas cher</h3>
+                        
+                        <div class="container-note">
+                            <div class="container-star">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                            </div>
+                            
+                            <p class="note">4.8/5</p>
+                        </div>
+                        
+                        <p>516 avis</p>
+                    </div>
+
+                </div>
+    
+                <div class="recette croque">
+
+                    <div class="container-favoris">
+                        <div class="favoris">
+                            <img class="like" src="img/Marmiton04.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="container-play">
+                        <img class="play" src="img/Marmiton05.svg" alt="">
+                    </div>
+
+                    <div class="container-titre-avis">
+                        <h3>Croque-monsieur</h3>
+                        
+                        <div class="container-note">
+                            <div class="container-star">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                            </div>
+                            
+                            <p class="note">4.8/5</p>
+                        </div>
+                        
+                        <p>516 avis</p>
+                    </div>
+
+                </div>
+    
+                <div class="recette tarte">
+
+                    <div class="container-favoris">
+                        <div class="favoris">
+                            <img class="like" src="img/Marmiton04.svg" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="container-play">
+                        <img class="play" src="img/Marmiton05.svg" alt="">
+                    </div>
+
+                    <div class="container-titre-avis">
+                        <h3>Tarte frangipane aux poires et au chocolat</h3>
+
+                        <div class="container-note">
+                            <div class="container-star">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                                <img class="star" src="img/star.svg" alt="">
+                            </div>
+                            
+                            <p class="note">4.8/5</p>
+                        </div>
+                        
+                        <p>516 avis</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="actus">
+
+            <div class="bandeau-actus">
+                <h2>Consultez nos dernières actus</h2>
+                <div class="container-fleche">
+                    <img src="img/Marmiton06.svg" alt="">
+                </div>
+            </div>
+
+            <div class="container-actus">
+
+                <div class="actu">
+
+                    <div class="container-actu">
+
+                        <div class="image-actu the">
+                            <div class="container-icon">
+                                <img src="img/text.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="titre-actu">
+                            <h3><a href="">Un médecin dévoile quels sont les thés à éviter pour votre santé</a></h3>
+                            <p>Il y a quelques minutes</p>
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    
+                </div>
+       
+                <div class="actu">
+
+                    <div class="container-actu">
+
+                        <div class="image-actu entrees">
+                            <div class="container-icon">
+                                <img src="img/text.svg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="titre-actu">
+                            <h3><a href="">Philippe Etchebest partage sa recette d’entrée facile et pas chère parfaite pour la saison</a></h3>
+                            <p>Il y a quelques minutes</p>
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    
+                </div>
+    
+                <div class="actu">
+
+                    <div class="container-actu">
+
+                        <div class="image-actu spritz">
+                            <div class="container-icon">
+                                <img src="img/text.svg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="titre-actu">
+                            <h3><a href="">Spritz d'automne : la recette pour préparer cette variante facilement</a></h3>
+                            <p>Il y a quelques minutes</p>
+                        </div>
+                        
+                    </div>
+    
+                    <hr>
+                    
+                </div>
+    
+                <div class="actu">
+
+                    <div class="container-actu">
+
+                        <div class="image-actu pdt">
+                            <div class="container-icon">
+                                <img src="img/text.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="titre-actu">
+                            <h3><a href="">Pommes de terre : faut-il plutôt les éplucher avant ou après la cuisson ?</a></h3>
+                            <p>Aujourd'hui</p>
+                        </div>
+
+                    </div>
+
+                    <hr>
+                    
+                </div>
+    
+                <div class="actu">
+
+                    <div class="container-actu">
+
+                        <div class="image-actu riz">
+                            <div class="container-icon">
+                                <img src="img/text.svg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="titre-actu">
+                            <h3><a href="">Congeler et décongeler du riz : est-ce une bonne idée ?</a></h3>
+                            <p>Aujourd'hui</p>
+                        </div>
+
+                    </div>
+
+                    <hr class="display-none-resp">
+                    
+                </div>
+    
+                <div class="actu">
+
+                    <div class="container-actu">
+
+                        <div class="image-actu sucre">
+                            <div class="container-icon">
+                                <img src="img/text.svg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="titre-actu">
+                            <h3><a href="">Faire du sucre glace maison avec 1 ingrédient et en 5 min, c'est possible avec cette méthode</a></h3>
+                            <p>Aujourd'hui</p>
+                        </div>
+
+                    </div>
+
+                    <hr>
+    
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 
+            En ce moment
+            Cuisine rapide
+            Pour vous aider en cuisine
+        -->
+
+        <section class="themes">
+
+            <h2>Inspiration thématique</h2>
+
+            <div class="thematiques">
+
+                <div class="display-none-resp hallocheeze">
+
+                    <div class="halloween box-shadow rounded-2">
+                        <a href=""><img src="img/halloween.PNG" alt=""></a>
+                        <a href="">Recettes Halloween</a>
+                    </div>
+
+                    <div class="fromage box-shadow rounded-2">
+                        <a href=""><img src="img/fromage.PNG" alt=""></a>
+                        <a href="">Recettes 100% fromage</a>
+                    </div>
+
+                </div>
+
+                <div class="theme">
+
+                    <div class="rapide box-shadow rounded-2">
+                        <a href=""><img src="img/rapide.PNG" alt=""></a>
+                        <a href="">Rapide</a>
+                    </div>
+    
+                    <div class="entrees box-shadow rounded-2">
+                        <a href=""><img src="img/icon_entrees.PNG" alt=""></a>
+                        <a href="">Entrées</a>
+                    </div>
+    
+                    <div class="plats box-shadow rounded-2">
+                        <a href=""><img src="img/plats.PNG" alt=""></a>
+                        <a href="">Plats</a>
+                    </div>
+    
+                    <div class="desserts box-shadow rounded-2">
+                        <a href=""><img src="img/desserts.PNG" alt=""></a>
+                        <a href="">Desserts</a>
+                    </div>
+    
+                    <div class="aperitifs box-shadow rounded-2">
+                        <a href=""><img src="img/aperitifs.PNG" alt=""></a>
+                        <a href="">Apéritifs</a>
+                    </div>
+    
+                    <div class="sans-viande box-shadow rounded-2">
+                        <a href=""><img src="img/sans_viande.PNG" alt=""></a>
+                        <a href="">Sans viande</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bandeau-cuisine">
+                <h2>Cuisinez avec <img src="img/nestle.png" alt=""></h2>
+                <div class="container-fleche">
+                    <img src="img/Marmiton06.svg" alt="">
+                </div>
+            </div>
+
+            <div class="container-nestle">
+
+                <div class="nestle">
+
+                    <div class="tarte-pomme">
+                        <div class="container-favoris">
+                            <div class="favoris">
+                                <img class="like" src="img/Marmiton04.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Tarte aux pommes et chocolat Nestlé Dessert®</h3>
+                        
+                        <p>Aucun avis</p>
+                    </div>
+
+                </div>
+
+                <div class="nestle">
+
+                    <div class="gateau-yaourt">
+                        <div class="container-favoris">
+                            <div class="favoris">
+                                <img class="like" src="img/Marmiton04.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Gâteau au yaourt glaçage chocolat aux éclats de...</h3>
+
+                        <div class="container-note">
+                            <div class="container-star">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                            </div>
+                            
+                            <p class="note">4.5/5</p>
+                        </div>
+                        
+                        <p>2 avis</p>
+                    </div>
+                    
+                </div>
+
+                <div class="nestle">
+
+                    <div class="muffins">
+                        <div class="container-favoris">
+                            <div class="favoris">
+                                <img class="like" src="img/Marmiton04.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Muffins chocolat noir Bio Nestlé Dessert®, huile...</h3>
+                        
+                        <p>Aucun avis</p>
+                    </div>
+                    
+                </div>
+
+                <div class="nestle">
+
+                    <div class="churros">
+                        <div class="container-favoris">
+                            <div class="favoris">
+                                <img class="like" src="img/Marmiton04.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Churros au four à la pâte à tartiner Nestlé...</h3>
+
+                        <div class="container-note">
+                            <div class="container-star">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                                <img class="star" src="img/star_orange.svg" alt="">
+                            </div>
+                            
+                            <p class="note">1/5</p>
+                        </div>
+                        
+                        <p>1 avis</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <h2>Découvrez nos ingédients de saison</h2>
+
+            <div class="ingredients">
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/poire.webp" alt="">
+                    <p>Poire</p>
+                </div>
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/pomme.webp" alt="">
+                    <p>Pomme</p>
+                </div>
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/coing.webp" alt="">
+                    <p>Coing</p>
+                </div>
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/chataigne.webp" alt="">
+                    <p>Châtaigne</p>
+                </div>
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/noix.webp" alt="">
+                    <p>Noix</p>
+                </div>
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/potiron.webp" alt="">
+                    <p>Potiron</p>
+                </div>
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/chou_fleur.webp" alt="">
+                    <p>Chou-fleur</p>
+                </div>
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/champignon.webp" alt="">
+                    <p>Cèpe et champi...</p>
+                </div>
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/betterave.webp" alt="">
+                    <p>Betterave</p>
+                </div>
+
+                <div class="ingredient box-shadow rounded-2">
+                    <img src="img/pomme_terre.webp" alt="">
+                    <p>Pomme de terre</p>
+                </div>
+
+            </div>
+
+            <h2>Tendances qui flambent</h2>
+
+                <ul class="tendances">
+                    <li><a href="">pâte de coing</a>•</li>
+                    <li><a href="">soupe</a>•</li>
+                    <li><a href="">tarte aux pommes</a>•</li>
+                    <li><a href="">recette tartiflette</a>•</li>
+                    <li><a href="">crumble pommes</a>•</li>
+                    <li><a href="">gelee de coing</a>•</li>
+                    <li><a href="">soupe potimarron</a>•</li>
+                    <li><a href="">tarte tatin</a>•</li>
+                    <li><a href="">croziflette</a>•</li>
+                    <li><a href="">recette couscous</a>•</li>
+                    <li><a href="">mayonnaise maison</a>•</li>
+                    <li><a href="">quiche sans pâte</a>•</li>
+                    <li><a href="">endives au jambon</a>•</li>
+                </ul>            
+
+        </section>
+
+    </main>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+>>>>>>> 37095e4
 </body>
 </html>

@@ -1,3 +1,586 @@
+@font-face {
+  font-family: "filson soft";
+  src: url(../fonts/FilsonSoft-Regular.woff2);
+}
+@font-face {
+  font-family: "open sans";
+  src: url(../fonts/Open-Sans.woff2);
+}
+@font-face {
+  font-family: "source sans pro";
+  src: url(../fonts/SourceSansPro-Regular.woff2);
+}
+/* Variables */
+li {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  border-radius: 10px;
+}
+
+hr {
+  border: 1px solid #D5D5D5;
+}
+
+.display-none {
+  display: none;
+}
+
+.icons {
+  height: 2.5vh;
+}
+
+.box-shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: sticky;
+  top: 0;
+}
+header nav ul {
+  width: 100%;
+  padding: 0.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul div {
+  display: flex;
+  align-items: center;
+}
+header nav ul div .euros {
+  margin-right: 1vw;
+  height: 3.5vh;
+}
+header nav ul div .login {
+  background-color: #FF6F61;
+  border-radius: 30px;
+  padding: 1vw 2vw;
+  display: flex;
+  align-items: center;
+}
+header nav ul div .signup {
+  color: #FF6F61;
+  text-decoration: underline;
+}
+
+main {
+  width: 96vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+main h2 {
+  font-family: "filson soft";
+  font-size: 1.5em;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+main h4 {
+  font-family: "open sans";
+  font-size: 0.75em;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+main .container-une .banane {
+  width: 100%;
+}
+main .container-une .banane h3 a {
+  font-family: "filson soft";
+  font-size: 0.5em;
+  color: #FF6F61;
+}
+main .container-une .banane img {
+  width: 100%;
+}
+main .container-une .banane .auteur {
+  display: flex;
+  align-items: center;
+}
+main .container-une .banane .auteur img {
+  width: 3vw;
+}
+main .container-une .banane .auteur p {
+  padding-left: 0.5vw;
+  font-family: "source sans pro";
+  color: #989898;
+  font-size: 0.75em;
+  margin-bottom: 0;
+}
+main .container-une .petite-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .container-une .petite-div .thumbnail {
+  width: 15%;
+}
+main .container-une .petite-div .thumbnail img {
+  width: 100%;
+}
+main .container-une .petite-div .petite-div-d {
+  width: 83%;
+}
+main .container-une .petite-div .petite-div-d h3 {
+  margin-top: 0;
+}
+main .container-une .petite-div .petite-div-d h3 a {
+  font-family: "filson soft";
+  color: #FF6F61;
+  font-size: 0.5em;
+}
+main .container-une .petite-div .petite-div-d .auteur {
+  display: flex;
+  align-items: center;
+}
+main .container-une .petite-div .petite-div-d .auteur img {
+  width: 3vw;
+}
+main .container-une .petite-div .petite-div-d .auteur p {
+  padding-left: 1vw;
+  font-family: "source sans pro";
+  color: #989898;
+  font-size: 0.75em;
+  margin-bottom: 0;
+}
+main .container-recettes {
+  width: 100%;
+  height: 41.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+main .container-recettes .gratin {
+  background: url(../img/gratin.webp) no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+}
+main .container-recettes .croque {
+  background: url(../img/croque.webp) no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+}
+main .container-recettes .tarte {
+  background: url(../img/tarte.webp) no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+}
+main .container-recettes .recette {
+  width: 32%;
+  height: 100%;
+}
+main .container-recettes .recette .container-play {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container-recettes .recette .container-play .play {
+  height: 20%;
+}
+main .container-recettes .recette .container-titre-avis {
+  height: 25%;
+  padding-left: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+main .container-recettes .recette .container-titre-avis h3, main .container-recettes .recette .container-titre-avis p {
+  font-family: "open sans";
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+main .container-recettes .recette .container-titre-avis h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+main .container-recettes .recette .container-titre-avis .container-note {
+  height: 2vw;
+  display: flex;
+  margin-bottom: 0.5vh;
+}
+main .container-recettes .recette .container-titre-avis .container-star {
+  width: 35%;
+  display: inline;
+}
+main .container-recettes .recette .container-titre-avis .container-star .star {
+  width: 1.5vw;
+  display: inline;
+}
+main .container-favoris {
+  display: flex;
+  justify-content: end;
+  padding: 1vw;
+}
+main .container-favoris .favoris {
+  width: 3.5vw;
+  height: 3.5vw;
+  padding: 1vw;
+  border: 1px solid #FF6F61;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container-favoris .favoris img {
+  width: 2.5vw;
+}
+main .bandeau-actus {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container-fleche {
+  width: 2vw;
+  height: 2vw;
+  background-color: #FF6F61;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container-fleche img {
+  width: 1vw;
+}
+main .actu {
+  width: 100%;
+}
+main .actu .sucre {
+  background: url(../img/Marmiton08.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .riz {
+  background: url(../img/Marmiton07.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .pdt {
+  background: url(../img/pdt.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .spritz {
+  background: url(../img/spritz.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .entrees {
+  background: url(../img/entrees.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .the {
+  background: url(../img/the.jpg) no-repeat;
+  background-size: contain;
+}
+main .actu .container-actus {
+  display: flex;
+  flex-direction: column;
+}
+main .actu .actu {
+  display: flex;
+  flex-direction: column;
+}
+main .actu .container-actu {
+  display: flex;
+}
+main .actu .image-actu {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 10px;
+}
+main .actu .image-actu .container-icon {
+  display: flex;
+  justify-content: end;
+}
+main .actu .image-actu .container-icon img {
+  margin-right: 0.5vw;
+  width: 3vw;
+}
+main .actu .titre-actu {
+  margin-left: 2vw;
+  width: 75%;
+}
+main .actu .titre-actu h3 {
+  margin-bottom: 0;
+  font-family: "open sans";
+  font-size: 1em;
+}
+main .actu .titre-actu p {
+  margin-top: 0;
+  font-family: "open sans";
+  font-size: 0.75em;
+  color: #989898;
+}
+main .hallocheeze {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+main .hallocheeze .halloween, main .hallocheeze .fromage {
+  width: 49.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+}
+main .theme {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .theme .rapide, main .theme .entrees, main .theme .plats, main .theme .desserts, main .theme .aperitifs, main .theme .sans-viande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32.5%;
+  padding: 2vw;
+  margin-bottom: 1vh;
+}
+main .theme .rapide img, main .theme .entrees img, main .theme .plats img, main .theme .desserts img, main .theme .aperitifs img, main .theme .sans-viande img {
+  width: 5vw;
+}
+main .bandeau-cuisine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .bandeau-cuisine h2 img {
+  width: 5vw;
+  border-radius: 0;
+}
+main .container-nestle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 38vh;
+}
+main .container-nestle .nestle {
+  width: 23.5%;
+  height: 100%;
+}
+main .container-nestle .tarte-pomme {
+  background: url(../img/tarte_pommes.webp) no-repeat;
+  background-size: contain;
+  height: 59%;
+  width: 100%;
+  border-radius: 10px;
+}
+main .container-nestle .gateau-yaourt {
+  background: url(../img/gateau_yaourt.webp) no-repeat;
+  background-size: contain;
+  height: 59%;
+  width: 100%;
+  border-radius: 10px;
+}
+main .container-nestle .muffins {
+  background: url(../img/muffins_choco.webp) no-repeat;
+  background-size: contain;
+  height: 59%;
+  width: 100%;
+  border-radius: 10px;
+}
+main .container-nestle .churros {
+  background: url(../img/churros.webp) no-repeat;
+  background-size: contain;
+  height: 59%;
+  width: 100%;
+  border-radius: 10px;
+}
+main .container-nestle .container-note {
+  height: 2vw;
+  display: flex;
+  margin-bottom: 0.5vh;
+}
+main .container-nestle .container-star {
+  width: 42%;
+  display: inline;
+}
+main .container-nestle .container-star .star {
+  width: 1.5vw;
+  display: inline;
+}
+main .ingredients {
+  display: flex;
+  justify-content: space-between;
+}
+main .ingredients .ingredient {
+  width: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .ingredients .ingredient img {
+  width: 4vw;
+}
+main .tendances {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .tendances a {
+  color: #989898;
+  margin-left: 0.25vw;
+  margin-right: 0.25vw;
+}
+
+@media screen and (min-width: 1000px) {
+  .display-none {
+    display: unset;
+  }
+  .display-none-resp {
+    display: none;
+  }
+  body {
+    background-color: #EFEFEF;
+  }
+  header {
+    margin: 0;
+    padding-top: 1vh;
+    width: 100%;
+    position: unset;
+  }
+  header ul {
+    margin: 0;
+    padding-left: 1vw;
+  }
+  header ul .titre-li {
+    color: #FF6F61;
+  }
+  header .icons {
+    height: 3vw;
+  }
+  header .barre-recherche {
+    border: 1px solid #F1EEED;
+    border-radius: 50px;
+    padding: 0.5vw 1vw;
+    display: flex;
+    align-items: center;
+  }
+  header .barre-recherche label {
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+  }
+  header .barre-recherche input[type=search] {
+    width: 40vw;
+    border: none;
+  }
+  header .barre-recherche a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .barre-recherche .btn {
+    width: 3vw;
+    height: 3vw;
+    background-color: #FF6F61;
+    border-radius: 50%;
+  }
+  header .barre-icons {
+    height: 1.5vw;
+  }
+  header .connexion {
+    background-color: #FF6F61;
+    border-radius: 30px;
+    padding: 1vw 2vw;
+    display: flex;
+    align-items: center;
+  }
+  header .connexion a {
+    color: white;
+  }
+  header .connexion a img {
+    margin-right: 1vw;
+  }
+  header .l-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9F9F9;
+  }
+  header .l-2 img {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
+  }
+  main {
+    width: 80%;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3vh 3vw;
+  }
+  main h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 3vh;
+  }
+  main .une h3 {
+    font-size: 0.8em;
+  }
+  main .une .container-une {
+    display: flex;
+    justify-content: space-between;
+  }
+  main .une .container-une .banane {
+    width: 58%;
+  }
+  main .une .container-une .banane h3 {
+    font-size: 1.25em;
+  }
+  main .une .container-une .div-droite {
+    width: 40%;
+  }
+  main .une .container-une .div-droite .thumbnail {
+    width: 16vw;
+    margin-right: 1vw;
+  }
+  main .une .container-une .div-droite h4 {
+    font-size: 1em;
+  }
+  main .une .container-une .div-droite .auteur {
+    align-items: center;
+  }
+  main .une .container-une .div-droite .auteur img {
+    width: 2vw;
+  }
+  main .une .container-une .div-droite .auteur p {
+    font-size: 0.75em;
+  }
+  main .container-recettes {
+    height: 55vh;
+  }
+  main .container-recettes .recette {
+    height: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  main .container-actus {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .container-actus .actu {
+    width: 49%;
+    flex-direction: column;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+  }
+  main .container-actus .actu .container-actu {
+    width: 100%;
+    display: flex;
+  }
+  main .container-actus .actu .container-actu h3 {
+    font-size: 1em;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
