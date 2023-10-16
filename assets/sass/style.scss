@@ -12,6 +12,42 @@
     font-family: "source sans pro";
     src: url(../fonts/SourceSansPro-Regular.woff2);
 }
+@font-face {
+    font-family: "sansprosb";
+    src: url(../fonts/SourceSansPro-SemiBold.woff2);
+}
+@font-face {
+    font-family: "sansprobold";
+    src: url(../fonts/SourceSansPro-Bold.woff2);
+}
+@font-face {
+    font-family: "sansproregu";
+    src: url(../fonts/SourceSansPro-Regular.woff2);
+}
+@font-face {
+    font-family: "filsonreg";
+    src: url(../fonts/FilsonSoft-Regular.woff2);
+}
+@font-face {
+    font-family: "filsonbold";
+    src: url(../fonts/FilsonSoft-Bold.woff2);
+}
+@font-face {
+    font-family: "filsonbold2";
+    src: url(../fonts/FilsonSoft-Bold\ \(1\).woff2);
+}
+@font-face {
+    font-family: "filsonbold3";
+    src: url(../fonts/FilsonSoft-Bold\ \(2\).woff2);
+}
+@font-face {
+    font-family: "opensans";
+    src: url(../fonts/Open-Sans.woff2);
+}
+@font-face {
+    font-family: pgpicons;
+    src: url(../fonts/pgp-icons.ttf);
+}
 
 /* Variables */
 $orange: #FF6F61;
@@ -45,7 +81,12 @@ hr {
 .box-shadow {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+body {
+    max-width: 98vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 header {
     width: 100%;
     background-color: white;
@@ -79,6 +120,7 @@ header {
         }
     }
 }
+
 main {
     width: 96vw;
     margin-left: auto;
@@ -436,6 +478,717 @@ main {
             margin-right: 0.25vw;
         }
     }
+    .main-recette-fast{
+        position: relative;
+        background-color: rgba(255, 111, 97, 0.102);
+        margin: 50px 0;
+        padding: 20px 15px 15px;
+        width: 959px;
+        overflow: hidden;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        .rond-gauche{
+            position:absolute;
+            z-index: 1;
+            width: 166px;
+            height: 166px;
+            background-color: rgba(255, 111, 97, 0.2);
+            border-radius: 50%;
+            top: 151px;
+            left: -55px;
+        }
+        .rond-top{
+            position:absolute;
+            z-index: 1;
+            width: 330px;
+            height: 330px;
+            background-color: rgba(255, 111, 97, 0.2);
+            border-radius: 50%;
+            // top: -415px;
+            // left: 640px;
+            top: -247.5px;
+            left: 70%;
+        }
+        .rond-droite{
+            position:absolute;
+            z-index: 1;
+            width: 330px;
+            height: 330px;
+            background-color: rgba(255, 111, 97, 0.2);
+            border-radius: 50%;
+            // top: -450px;
+            // right: -900px;
+            top: 95px;
+            right: -288px;
+        }
+        .block-home-folder{
+            position: relative;
+            z-index: 2;
+           .img-folder{
+                position: relative;
+                margin: 0 auto 30px;
+                height: 190px;
+                min-width: 310px;
+                width: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+           }
+           .content-folder{
+                width: 100%;
+                margin-bottom: 20px;
+                text-align: center;
+                h2{
+                    margin: 0 0 20px;
+                    font-family: 'filsonreg';
+                    font-size: 20px;
+                    color: #ff6f61;
+                    font-weight: 700;
+                    text-align: center;
+                }
+                p{
+                    margin-bottom: 20px;
+                    font-family: 'opensans';
+                    font-size: 16px;
+                    color: #3f3735;
+                    font-weight: 400;
+                }
+                button{
+                    width: 90%;
+                    padding: 10px 25px;
+                    border: 1px solid rgba(255, 111, 97, 0.5);
+                    border-radius: 33px;
+                    color: #ff6f61;
+                    font-family: 'filsonreg';
+                    font-size: 16px;
+                    background: local;
+                    line-height: 18px;
+                }
+            }
+        }
+        .block-home-container{
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            h2{
+                font-size: 18px;
+                margin-bottom: 15px;
+                color: #3f3735;
+                font-family: 'opensans';
+                font-weight: 700;
+            }
+            .box-img-4x{
+                height: 100%;
+                margin-left: 1px;
+            }
+            .card-img{
+                width: 449px;
+                height: 524px;
+                .box-container-img{
+                    height: 449px;
+                    .img-card-1{
+                        position: relative;
+                        img{
+                            width: 100%;
+                            max-width: 100%;
+                            border-radius: 15px;
+                        }
+                    }
+                    .img-card-2{
+                        position: relative;
+                        z-index: 4;
+                        top: -435px;
+                        right:-410px;
+                        img{
+                            filter: invert(1);
+                        }
+                    }
+                }
+                .box-container-title{
+                    text-align: center;
+                    color: #3f3735;
+                    a{
+                        height: 50px;
+                        font-size: 16px;
+                        line-height: 25px;
+                        color: #3f3735;
+                        font-family: 'opensans';
+                        font-weight: 600;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .recettesdesaisons{
+            height: 175vh;
+            width: 96%;
+            margin-left: auto;
+            margin-right: auto;
+            .lastone {
+                color: #3f3735;
+            }
+            .head {
+                width: 100%;
+                height: 2%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 22px;
+                font-family: 'filsonbold';
+                margin-bottom: 19px;
+            }
+            img {
+                border-radius: 4%;
+            }
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-family: 'filsonbold';
+                color: #5f5f5f;
+            }
+            p{
+                font-size: 10px;
+            }
+            .recettesdesaisonsmult {
+                width: 100%;
+                height: 130vh;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .un, .deux, .trois {
+                width: 100%;
+                height: 42vh;
+                flex-wrap: wrap;
+                display: flex;
+                p{
+                    font-size: 15px;
+                }
+            }
+            .un {
+                width: 100%;
+                height: 30%;
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: start;
+                .un-bis {
+                    width: 50%;
+                    p{
+                        width: 70%;
+                        height: 1%;
+                    }
+                    .etoile {
+                        width: 50%;
+                        height: 4%;
+                    }
+                }
+            }
+            .deux {
+                width: 100%;
+                height: 30%;
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: start;
+                .deux-bis {
+                    width: 50%;
+                    p{
+                        width: 70%;
+                        height: 1%;
+                    }
+                    .etoile {
+                        width: 50%;
+                        height: 4%;
+                    }
+                }
+            }
+            .trois {
+                width: 100%;
+                height: 30%;
+                flex-wrap: wrap;
+                display: flex;
+                justify-content: start;
+                .trois-bis {
+                    width: 50%;
+                    p{
+                        width: 70%;
+                        height: 1%;
+                    }
+                    .etoile {
+                        width: 50%;
+                        height: 4%;
+                    }
+                }
+            }
+        }
+        .menudelasemaine {
+            width: 96%;
+            height: 90vh;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .head {
+                width: 100%;
+                height: 2%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 22px;
+                font-family: 'filsonbold';
+            }
+            img{
+                border-radius: 2%;
+            }
+            .jour {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .days {
+                    align-content: center;
+                    justify-content: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 4%;
+                    background-color: #ff6f61;
+                    height: 80%;
+                    border-radius: 40%;
+                    color: white;
+                    font-size: 12px;
+                    font-family: 'opensans';
+                }
+                .days2 {
+                    align-content: center;
+                    justify-content: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 3%;
+                    height: 100%;
+                    color: black;
+                    font-family: 'opensans';
+                    font-size: 12px;
+                }
+                .date{
+                    font-size: 16px;
+                }
+            }
+        }
+        .newsletters {
+            width: 96%;
+            height: 35vh;
+            background-color: #ff6f611a;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .news {
+                width: 35%;
+                height: 40%;
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                h3 {
+                    margin-top: 30px;
+                    font-family: 'filsonbold';
+                    font-size: 24px;
+                    color: #3f3735;
+                    height: 15%;
+
+                }
+                .sabonner {
+                    width: 50%;
+                    height: 30%;
+                    transition: all 0.2s ease-in;
+                    line-height: 2rem;
+                    border-radius: 2rem;
+                    font-size: 16px;
+                    padding: 7px 2rem;
+                    font-weight: 500;
+                    text-overflow: ellipsis;
+                    cursor: pointer;
+                    font-family: 'filsonreg';
+                    outline: none;
+                    background-color: #ff6f61;
+                    color: white;
+                }
+            }
+            .conseils {
+                width: 100%;
+                height: 60%;
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: space-around;
+                .conseils1 {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    span {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 15px;
+                        font-family: 'opensans';
+                        color: black;
+                    }
+                }
+            }
+        }
+        .toprecettes {
+            width: 96%;
+            height: 30vh;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            .head {
+                width: 100%;
+                height: 12%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 22px;
+                font-family: 'filsonreg';
+            }
+            .toprecettes2 {
+                width: 100%;
+                height: 88%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .top1 {
+                    width: 24%;
+                    height: 100%;
+                }
+                a {
+                    font-size: 18px;
+                    font-family: 'filsonbold';
+                    color: #5f5f5f;
+                }
+                img {
+                    border-radius: 10%;
+                }
+            }
+        }
+        .coursdecuisine{
+            width: 96%;
+            height: 40vh;
+            background-color: #ff6f611a;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            .promo {
+                margin-top: 40px;
+                width: 100%;
+                height: 40%;
+                .lancement {
+                    font-family: 'filsonreg';
+                    font-size: 22px;
+                    color: #ff6f61;
+                    height: 20%;
+                    margin-left: 24px;
+                }
+                p {
+                    margin-left: 24px;
+                    color: #3f3735;
+                    font-size: 16px;
+                    font-family: 'opensans';
+                }
+                .moreinformation{
+                    margin-left: 24px;
+                    width: 95%;
+                    transition: all 0.2s ease-in;
+                    line-height: 2rem;
+                    border-radius: 2rem;
+                    font-size: 16px;
+                    padding: 7px 2rem;
+                    font-weight: 500;
+                    text-overflow: ellipsis;
+                    cursor: pointer;
+                    font-family: 'filsonreg';
+                    outline: none;
+                    background-color: #ff6f61;
+                    color: white;
+                }
+            }
+        }
+        .dernieres-recettes {
+            width: 96%;
+            height: 27vh;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+            .head {
+                width: 100%;
+                height: 12%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 22px;
+                font-family: 'filsonreg';
+            }
+            .recettes4 {
+                width: 100%;
+                height: 88%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .snickers {
+                    width: 24%;
+                    height: 100%;
+                }
+                .camembert {
+                    width: 24%;
+                    height: 100%;
+                }
+                .tortilla {
+                    width: 24%;
+                    height: 100%;
+                }
+                .sandwich {
+                    width: 24%;
+                    height: 100%;
+                }
+                a {
+                    font-size: 18px;
+                    font-family: 'filsonbold';
+                    color: #5f5f5f;
+                }
+                img {
+                    border-radius: 10%;
+                }
+                p{
+                    font-size: 12px;
+                    font-family: 'opensans';
+                    color: #989898;
+                }
+            }
+        }
+        .mag {
+            width: 96%;
+            height: 35vh;
+            background-color: bisque;
+            margin-bottom: 60px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            .offres {
+                width: 100%;
+                height: 45%;
+                text-align: center;
+                .title {
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: 'filsonreg';
+                    font-size: 22px;
+                    font-weight: 400;
+                    color: #ff6f61;
+                    }
+                p {
+                    text-align: center;
+                    font-family: 'opensans';
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #3f3735;
+                    line-height: 19px;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+                a {
+                    text-decoration: none;
+                    margin-top: 0.5rem;
+                    padding: 10px 25px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    font-family: 'filsonreg';
+                    line-height: 22px;
+                    border-radius: 33px;
+                    color: #ff6f61;
+                    border: 1px solid rgba(255, 111, 97, 0.5);
+                    min-width: 64px;
+                }
+            }
+            .livres {
+                width: 100%;
+                height: 55%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                .livrepromo {
+                    width: 33%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .rond {
+                    position: absolute;
+                    width: 190px;
+                    height: 190px;
+                    background-color: #ff6f61;
+                    border-radius: 50%;
+                    opacity: 0.5;
+                }
+                .left {
+                    position: absolute;
+                    top: 45px;
+                    left: 25px;
+                    z-index: 1;
+                    height: 162px;
+                    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 6px 0;
+                    transform: rotate(-7deg);
+                }
+                .right {
+                    position: absolute;
+                    top: 20px;
+                    left: 130px;
+                    height: 162px;
+                    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 6px 0;
+                    transform: rotate(7deg);
+                }
+            }
+        }
+    }
+}
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: #ff6f61;
+    display: flex;
+    flex-direction: column;
+    .go-top {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        background-color: #ff6f61;
+        margin-top: -22px;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+            transform: rotate(-90deg);
+            filter: invert(1);
+            margin-left: 14px;
+            margin-top: 6px;
+        }
+    }
+    .reseaux-sociaux {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .application {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 435px;
+        height: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #ff9b90;
+        border-radius: 50px;
+        margin-bottom: 60px;
+        
+        p {
+            color: white;
+            font-size: 16px;
+            font-family: sansprobold;
+        }
+        img {
+            margin-top: 30px;
+            margin-right: 30px;
+        }
+    }
+    .accordion-item {
+        background-color: #ff6f61;
+        h2 {
+            background-color: #ff6f61;
+            font-family: sansprosb;
+            font-size: 18.004px;
+        }
+        ul, li {
+            list-style: none;
+            color: white;
+        }
+        li {
+            font-family: sansproregu;
+            font-size: 16.002px;
+        }
+    }
+    .index  {
+        width: 100%;
+        height: 5vh; 
+        background-color: #ff6f61;
+        h3 {
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .choix {
+            width: 100%;
+            height: 4vh;
+            display: flex;
+            background-color: #ff6f61;
+            ul {
+                list-style: none;
+                display: flex;
+                margin-left: 40px;
+                align-content: center;
+                justify-content: space-between;
+                a li{                   
+                    width: 30px;
+                    height: 30px;
+                    border: 1px  black;
+                    border-radius: 50%;
+                    background-color: #ff9b90;
+                    }
+                }
+            }
+        }
+    .footercontent {
+        width: 100%;
+        height: 20vh;
+        margin-top: 50px;
+        color: white;
+        p {
+            width: 18%;
+            height: 2vh;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            font-size: 14px;
+            font-family: sansproregu;
+        }
+        .conditions {
+            width: 100%;
+            height: 15vh;
+            margin-top: 10px;
+            p {
+                width: 80%;
+                height: 2vh;
+                color: black;
+                font-size: 14px;
+                font-family: sansproregu;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -591,3 +1344,5 @@ main {
         }
     }
 }
+
+        
